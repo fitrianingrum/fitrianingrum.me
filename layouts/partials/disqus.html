@@ -1,0 +1,23 @@
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function() {
+        this.page.url = "{{ .Permalink }}";
+        this.page.identifier = "{{ .BaseFileName }}";
+    };
+
+    (function() {
+
+        // Users have noticed that enabling Disqus comments when running the Hugo web server on localhost
+        // causes the creation of unwanted discussions on the associated Disqus account.
+        if (window.location.hostname == "localhost")
+            return;
+
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://phi21st-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

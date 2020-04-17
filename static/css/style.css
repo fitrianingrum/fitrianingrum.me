@@ -1,0 +1,262 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f5f6;
+    margin-top: 75px;
+    font-size: 0.875rem;
+}
+
+.full-height {
+    height: calc(100% - 200px) !important;
+    min-height: calc(100% - 200px) !important;
+}
+
+.header {
+    letter-spacing: 0.0875rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #453135;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.form-inline.form-subscribe {
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.site-footer {
+    margin: 20px 0 0 0;
+    border-top: 1px solid #ebebeb;
+    padding: 20px 0 20px 0;
+}
+
+.love {
+    color: fuchsia;
+}
+
+a {
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 1.625rem;
+    font-weight:600;
+}
+
+    h1 > small > a, .h1 > small > a, h1 > a, .h1 > a {
+        color: #000000;
+        font-weight: 500;
+    }
+
+        h1 > small > a:hover, .h1 > small > a:hover, h1 > a:hover, .h1 > a:hover {
+            color: #007bff;
+            font-weight: 500;
+        }
+
+h2,
+.h2 {
+    font-size: 1.375rem;
+    color: #000000;
+}
+
+h3,
+.h3 {
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+h4,
+.h4 {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.pagination {
+    padding: 20px 0 0 0;
+}
+
+.older-posts,
+.newer-posts {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.newer-posts {
+    left: 10px
+}
+
+.older-posts {
+    right: 10px
+}
+
+.list-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align:center;
+}
+
+.site-pagination {
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.image-gallery {
+    padding: 0 0 16px 0;
+}
+
+.img-gallery {
+    width: 100%;
+    height: auto;
+}
+
+    .img-gallery.img-thumbnail {
+        border: none;
+        border-radius: 0;
+    }
+
+figure.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    margin: 0 0 0 0;
+}
+
+    figure.hovereffect img {
+        display: block;
+        position: relative;
+        -webkit-transition: all .4s linear;
+        transition: all .4s linear;
+    }
+
+    figure.hovereffect:hover img {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+.text-muted.post-date {
+    padding: 0 0 20px 0;
+}
+/* Subscribe (right) */
+.subscribe {
+    border: solid 1px #ded8d8;
+    background-color: #f1f1f1;
+}
+
+.subscribe-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+/* Tags */
+.tags, .categories {
+    border: solid 1px #ded8d8;
+    background-color: #f1f1f1;
+}
+.tag-title, .category-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+ul.all-categories,
+ul.all-tags,
+ul.related-posts {
+    list-style: none;
+    padding: 8px 0 0 8px;
+}
+
+    ul.all-categories > li,
+    ul.all-tags > li,
+    ul.related-posts > li {
+        padding: 0 0 0 0.625rem;
+        text-indent: -1rem;
+    }
+        ul.all-categories > li > a,
+        ul.all-tags > li > a {
+            color: #212529;
+            font-weight:300;
+        }
+
+        ul .all-categories > li:before, ul.all-tags > li:before {
+            padding-right: 0.625rem;
+        }
+
+        ul.related-posts > li:before {
+            content: '»';
+            padding-right: 0.625rem;
+        }
+
+.site-description {
+    font-size: 1rem;
+    padding: 50px 20px 50px 20px;
+    line-height: 20px;
+    height: 120px;
+}
+
+/*Code command table*/
+
+table {
+    margin-bottom: 20px;
+    min-width: 50%;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+    table > thead > tr > th {
+        border-bottom: 1pt #212529 solid;
+        padding: 0 5px 0 5px;
+    }
+    table > tbody > tr > td {
+        padding: 0 5px 0 5px;
+    }
+
+.highlight > div {
+    margin-bottom: 20px;
+}
+
+.min-read {
+    display: inline-block;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.badge {
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.char-spacing-small {
+    letter-spacing: 0.0875rem;
+}
+
+.section-title {
+    letter-spacing: 0.0875rem;
+    font-size: 1.125rem;
+}
+
+/*Cards*/
+.card-header > a {
+    color: #000000;
+}

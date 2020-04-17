@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main class="content m-4 p-2">
+    <div class="container">
+        <div class="row site-content">
+            <div class="col-md-8 col-sm-12 p-4 mb-4 bg-white shadow">
+                <article class="post">
+                    {{ if not .Params.hideTitleAndDate}}
+                    <small class="text-muted">{{ .Date.Format "January 2, 2006" }} by <a href="/author/fitrianingrum">{{ $.Site.Params.Author }}</a></small>
+                    <h1 class="post-title mt-2 mb-3">{{ .Title }}</h1>
+                    {{ end }}
+
+                    <section class="post-content">
+                        {{ .Content }}
+                    </section>
+
+                    <section class="post-tag mb-4">
+                        {{ $taxo := "tags" }}
+                        {{ range .Param $taxo }}
+                        {{ $name := . }}
+                        {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                        <a class="badge badge-secondary" href="{{ .Permalink }}">{{ $name }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </section>
+
+                    {{ partial "related.html" .}}
+
+                    <section class="post-comment">
+                        {{ partial "disqus.html" .}}
+                    </section>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ partial "tags.html" .}}
+                    </div>
+                    <div class="col-sm-12 pt-4">
+                        {{ partial "subscribe-newsletter.html" .}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

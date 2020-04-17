@@ -1,0 +1,31 @@
+{{ define "main" }}
+    <main class="content m-4 p-2">
+        <div class="container">
+            <div class="text-center mb-4 section-title">This blog is coming soon.</div>
+            <div class="row">
+                <div class="card-group">
+                    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "post") 4 }}
+                    {{ range $paginator.Pages }}
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <article class="post card mb-3 shadow bg-white">
+                            <img src="https://res.cloudinary.com/phi21st/image/upload/v1551864247/phi21st.com/card-header.jpg" class="card-img-top" alt="post image">
+                            <div class="card-header">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    {{ .Summary }}
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a class="card-link" href="{{ .URL }}">&raquo; continue reading</a>
+                            </div>
+                        </article>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            
+        </div>
+    </main>
+{{ end }}

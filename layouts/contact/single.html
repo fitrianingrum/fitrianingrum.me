@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="content m-4 p-2">
+    <div class="container">
+        <div class="row site-content">
+            <div class="col-md-8 offset-md-2 col-sm-12 p-4">
+                <article class="post">
+                    <h1 class="post-title mb-4"><small>{{ .Title }}</small></h1>
+                    <section class="post-content">
+                        {{ .Content }}
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

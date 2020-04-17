@@ -1,0 +1,12 @@
+<aside>
+    <section id="tags" class="mx-4 px-4 pt-4 pb-2 tags">
+        <div>
+            <span class="tag-title">All Tags</span>
+            <ul class="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                <li><a href="/tags/{{ $name | urlize }}">{{ $name }} <small>({{ .Count }})</small></a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </section>
+</aside>

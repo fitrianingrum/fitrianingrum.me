@@ -1,0 +1,34 @@
+baseURL = "https://www.fitrianingrum.me/"
+languageCode = "en-US"
+title = "Fitrianingrum"
+disqusShortname = ""
+enableEmoji = true
+pygmentsCodeFences = true
+pygmentsStyle = "manni"
+summaryLength = 40 
+googleAnalytics = "UA-163096145-1"
+canonifyURLs = true
+
+[related]
+  threshold = 75
+  includeNewer = true
+  toLower = false
+  indices = [
+	{ name = "tags", weight = 100 },
+	{ name = "date", weight = 10  }
+  ]
+
+[params]
+    Author = "Fitrianingrum"
+	Description = "Blog and personal website of Fitrianingrum"
+    SiteTagline = "Writing, blogging..."
+    NavLinks = [
+		
+    ]
+    
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[permalinks]
+	post = "post/:title/"

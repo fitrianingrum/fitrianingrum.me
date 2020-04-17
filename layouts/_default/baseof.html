@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode }}">
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+
+    {{ block "subscribe-form" . }}
+    <!-- Default is empty -->
+    {{ end }}
+
+    {{ block "main" . }}
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+
+    {{ partial "script.html" . }}
+
+    {{ block "additional-script" . }}
+    <!-- Default is empty -->
+    {{ end }}
+</body>
+
+</html>

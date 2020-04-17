@@ -1,0 +1,11 @@
+{{ $related := .Site.RegularPages.Related . }}
+{{ with $related }}
+<section id="related-posts">
+    <h3 class="tag-title">YOU MIGHT ALSO LIKE</h3>
+    <ul class="related-posts">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

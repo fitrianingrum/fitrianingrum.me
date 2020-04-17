@@ -1,0 +1,15 @@
+<div class="row image-gallery text-center">
+    <div class="col-md-8">
+        <div class="row no-gutters">
+            {{ range .Params }}
+            <div class="col-4">
+                <figure class="hovereffect">
+                    <a href="https://www.instagram.com/p/{{ . }}" target="_blank">
+                        <img src="https://www.instagram.com/p/{{ . }}/media/?size=t" alt="{{ . }}" class="img-gallery img-thumbnail">
+                    </a>
+                </figure>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

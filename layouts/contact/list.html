@@ -1,0 +1,53 @@
+{{ define "main" }}
+<main class="content m-4 p-2">
+    <div class="container">
+        <div class="row site-content">
+            <div class="col-md-8 offset-md-2 col-sm-12 p-4">
+                <h1 class="post-title mb-4"><small>Work with me</small></h1>
+                <div class="site-content">
+                    <form method="post" id="contactform">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="name">Your name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="emailaddress">Your email address</label>
+                                    <input type="email" class="form-control" id="emailaddress" name="_replyto" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <label for="message">Your message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="8" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="hidden" name="_subject" value="fitrianingrum.me - A new message" />
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="hidden" name="_next" value="/contact/thankyou">
+                                <button type="submit" class="btn btn-secondary btn-sm">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}
+
+
+{{ define "additional-script" }}
+<script type="text/javascript">
+    var contactform = document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'fitrianingrum' + '@' + 'live' + '.' + 'com');
+</script>
+{{ end }}
