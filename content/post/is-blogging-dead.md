@@ -5,7 +5,7 @@ date: 2020-04-20T10:52:25+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png"
 tags: ["blog"]
 categories: ["general"]
-keywords: ["blogging isn't dead", "is blogging dead"]
+keywords: ["blogging is not dead", "is blogging dead", "blogging is dead"]
 ---
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png" alt="Blogging in 2020" >}}
