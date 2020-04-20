@@ -1,11 +1,11 @@
 baseURL = "https://www.fitrianingrum.me/"
 languageCode = "en-US"
-title = "Fitrianingrum"
+title = "Fitrianingrum's"
 disqusShortname = ""
 enableEmoji = true
 pygmentsCodeFences = true
 pygmentsStyle = "manni"
-summaryLength = 40 
+summaryLength = 30 
 googleAnalytics = "UA-163096145-1"
 canonifyURLs = true
 
@@ -20,7 +20,7 @@ canonifyURLs = true
 
 [params]
     Author = "Fitrianingrum"
-	Description = "Blog and personal website of Fitrianingrum"
+	Description = "blog and personal website"
     SiteTagline = "Writing, blogging..."
     NavLinks = [
 		
