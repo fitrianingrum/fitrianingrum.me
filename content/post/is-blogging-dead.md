@@ -1,8 +1,8 @@
 ---
 title: "Is Blogging Dead?"
-description: "You might have heard that blogging is finally dead and then start abandoning your blogs. Please don't be!"
+description: "You might have heard that blogging is finally dead and then thinking of abandoning your blogs. Before doing that, let's find out in this article, whether that's true or not."
 date: 2020-04-20T10:52:25+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png"
+image: "https://res.cloudinary.com/phi21st/image/upload/w_300/v1587374822/fitrianingrum.me/2020-blogging.png"
 tags: ["blog"]
 categories: ["general"]
 keywords: ["blogging is not dead", "is blogging dead", "blogging is dead"]
@@ -10,7 +10,10 @@ keywords: ["blogging is not dead", "is blogging dead", "blogging is dead"]
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png" alt="Blogging in 2020" >}}
 
-This is 2020, and the funny thing is, I just started this blog. Like me, you may have heard that blogging is finally dead. _But_, is it valid?
+This is 2020, and the funny thing is, I just started this blog.
+Actually, I have another blog, but since I don't like the domain, I choose to create a new one and start fresh.
+
+Like me, you may have heard that blogging is finally dead. _But_, is it valid?
 
 In fact, the blogging ecosystem is now mature and well established. 
 Companies still invest their time, energy, and even money to produce high-quality content to create brand awareness for their business. 
@@ -22,7 +25,7 @@ Let's look at some [interesting statistics about blogging growth](https://optinm
 
 * The vast majority of internet users (77%) read blogs regularly.
 * Every month, around 409 million people view more than 20 billion pages.
-* More than 500 million blogs exist in 2019.
+* More than 500 million blogs existed in 2019.
 * Tumblr has more than 440 million blogs.
 * WordPress has about 60 million blogs.
 * There are approximately 1.9 billion web pages at this moment.
@@ -42,7 +45,7 @@ However, it's not suitable for telling detailed information about something, res
 
 So, these microblogging platforms don't compete with your blog, and you should not worry that they'll replace your blog. Instead, think of them as complementary.
 
-## Write compelling blog posts
+## Old school blogging
 
 If you still blog like the old days, for example, writing about your daily activities and some random posts, then your blog is not likely going to grow significantly. 
 To me personally, I think that's OK if your goal is just to create a personal online journal.
