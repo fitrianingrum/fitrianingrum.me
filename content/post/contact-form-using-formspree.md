@@ -1,6 +1,6 @@
 ---
 title: "How to Add Contact Forms to Your Static Sites Using Formspree"
-description: "Do you have a static website and wondering how to add a contact form on it? This article shows you how the step-by-step on how to add a dynamic contact form to your static website easily using Formspree."
+description: "Do you have a static website and wondering how to add a contact form on it? This article shows you the step-by-step on how to add a dynamic contact form to your static website easily using Formspree."
 date: 2020-04-20T16:49:16+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/w_300/v1587377030/fitrianingrum.me/2020-contact-form.png"
 tags: ["contact form", "formspree", "web development"]
@@ -10,11 +10,11 @@ categories: ["technology"]
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587377030/fitrianingrum.me/2020-contact-form.png" alt="Contact form" >}}
 
-Static sites are getting more and more popular nowadays. 
-They're suitable for blogs, personal websites, company websites, and other informational sites that do not need their contents rendered dynamically on the fly. 
+A contact form allows your visitors to communicate with you privately. 
+As static sites are getting more and more popular nowadays, you may have a purely static company website, personal website, or blog.
 
-However, there are limitations to what you can achieve using static sites. 
-For example, you cannot add any backend code to add a simple contact form to make your website more dynamic.
+However, there are limitations to what you can achieve using static sites, especially in making it more dynamic. 
+For example, to add a simple contact form, you can't add any backend code to your website.
 
 Fortunately, there are services out there that offer simple solutions to this problem. 
 For adding the contact form, you can use a simple and easy way using [Formspree](https://formspree.io/). 
@@ -67,7 +67,7 @@ Any submission with this field filled in will be considered spam.
 <input type="text" name="_gotcha" style="display:none" />
 {{< /highlight >}}
 
-## Final code
+**Step 5. Review the final code**
 
 After following the four steps above, your final code will look like this:
 
@@ -83,7 +83,7 @@ After following the four steps above, your final code will look like this:
 </form>
 {{< /highlight >}}
 
-## Checking the result
+**Step 6. Checking the result**
 
 Finally, it's time to ensure your contact form works. Fill in the fields and then submit it. 
 After a few seconds, you will get an email from Formspree asking you to confirm your email address.

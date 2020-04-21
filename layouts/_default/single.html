@@ -5,7 +5,7 @@
             <div class="col-md-8 col-sm-12 p-4 mb-4 bg-white shadow">
                 <article class="post">
                     {{ if not .Params.hideTitleAndDate}}
-                    <small class="text-muted">Last updated {{ .Lastmod.Format "January 2, 2006" }} by {{ $.Site.Params.Author }}</small>
+                    <small class="text-muted">Last updated on {{ .Lastmod.Format "January 2, 2006" }}, by {{ $.Site.Params.Author }}</small>
                     <h1 class="post-title mt-2 mb-3">{{ .Title }}</h1>
                     {{ end }}
 

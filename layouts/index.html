@@ -8,7 +8,7 @@
                     {{ range $paginator.Pages }}
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="post card mb-3 shadow bg-white">
-                            <img src="{{ .Params.image }}" class="card-img-top" alt="post image">
+                            <a href="{{ .Permalink }}"><img src="{{ .Params.image }}" class="card-img-top" alt="post image"></a>
                             <div class="card-header">
                                 <a class="card-header-title" href="{{ .Permalink }}">{{ upper .Title }}</a>
                             </div>
