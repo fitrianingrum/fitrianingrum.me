@@ -83,6 +83,15 @@ h4,
     text-decoration: underline;
 }
 
+figcaption > h4 {
+    color: darkblue;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8125rem;
+    margin: 12px 0;
+}
+
 .pagination {
     padding: 20px 0 0 0;
 }
