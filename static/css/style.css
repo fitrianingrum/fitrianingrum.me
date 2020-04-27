@@ -84,12 +84,12 @@ h4,
 }
 
 figcaption > h4 {
-    color: darkblue;
     text-decoration: none;
     text-align: center;
+    font-size: 0.875rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8125rem;
-    margin: 12px 0;
+    font-style: italic;
+    margin: 8px 0 32px 0;
 }
 
 .pagination {
@@ -227,7 +227,7 @@ ul.related-posts {
 
 /*Code command table*/
 
-table {
+/*table {
     margin-bottom: 20px;
     min-width: 50%;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -239,7 +239,7 @@ table {
     }
     table > tbody > tr > td {
         padding: 0 5px 0 5px;
-    }
+    }*/
 
 .highlight > div {
     margin-bottom: 20px;

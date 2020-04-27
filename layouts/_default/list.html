@@ -11,7 +11,7 @@
                     {{ $paginator := .Paginate (where .Pages "Type" "post") 10 }}
                     {{ range $paginator.Pages }}
                     <article class="m-0 px-4 py-2 border-bottom">
-                        <small class="text-muted">Last updated on {{ .Lastmod.Format "January 2, 2006" }}</small>
+                        <small class="text-muted">Created on {{ .Date.Format "January 2, 2006" }}</small>
                         <h1><small><a href="{{ .Permalink }}">{{ .Title }}</a></small></h1>
                         <section class="post-content">
                             {{ .Description }}

@@ -1,14 +1,14 @@
 {{ define "main" }}
     <main class="content m-4 p-2">
         <div class="container">
-            <div class="text-center mb-4 section-title">Recent posts</div>
+            <div class="text-center mb-4 section-title">&mdash; Recent posts &mdash;</div>
             <div class="row">
                 <div class="card-group">
                     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "post") 3 }}
                     {{ range $paginator.Pages }}
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="post card mb-3 shadow bg-white">
-                            <a href="{{ .Permalink }}"><img src="{{ .Params.image }}" class="card-img-top" alt="post image"></a>
+                            {{ if .Params.image }}<a href="{{ .Permalink }}"><img src="{{ replace .Params.image "/upload" "/upload/w_300" }}" class="card-img-top" alt="post image"></a>{{ end }}
                             <div class="card-header">
                                 <a class="card-header-title" href="{{ .Permalink }}">{{ upper .Title }}</a>
                             </div>

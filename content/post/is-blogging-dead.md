@@ -2,16 +2,14 @@
 title: "Is Blogging Dead?"
 description: "You might have heard that blogging is finally dead and then thinking of abandoning your blogs. Before doing that, let's find out in this article, whether that's true or not."
 date: 2020-04-20T10:52:25+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/w_300/v1587374822/fitrianingrum.me/2020-blogging.png"
+image: "https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png"
 tags: ["blog"]
-categories: ["general"]
+categories: ["writing"]
 keywords: ["blogging is not dead", "is blogging dead", "blogging is dead"]
 ---
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png" alt="Blogging in 2020" >}}
-
 This is 2020, and the funny thing is, I just started this blog.
-Actually, I have another blog, but since I don't like the domain, I choose to create a new one and start fresh.
+Actually, I have another blog, but since I don't like its domain name, I choose to create a new one and start afresh.
 
 Like me, you may have heard that blogging is finally dead. _But_, is it valid?
 

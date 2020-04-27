@@ -2,13 +2,11 @@
 title: "How to Add Contact Forms to Your Static Sites Using Formspree"
 description: "Do you have a static website and wondering how to add a contact form on it? This article shows you the step-by-step on how to add a dynamic contact form to your static website easily using Formspree."
 date: 2020-04-20T16:49:16+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/w_300/v1587377030/fitrianingrum.me/2020-contact-form.png"
-tags: ["contact form", "formspree", "web development"]
+image: "https://res.cloudinary.com/phi21st/image/upload/v1587377030/fitrianingrum.me/2020-contact-form.png"
+tags: ["contact form", "formspree"]
 keywords: ["contact form using formspree", "formspree contact form"]
-categories: ["technology"]
+categories: ["web development"]
 ---
-
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587377030/fitrianingrum.me/2020-contact-form.png" alt="Contact form" >}}
 
 A contact form lets your visitors communicate with you privately. 
 As static sites are getting more and more popular nowadays, you may have a purely static company website, personal website, or blog.
@@ -25,10 +23,13 @@ The final result will be similar to the [contact](/contact) form on this site, l
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587518786/fitrianingrum.me/2020-example-contact-form.jpg" alt="Contact form example" >}}
 
-📑  **Note**: When building a contact form, it's better to keep your contact form simple and to the point. 
+
+{{< note >}}
+When building a contact form, it's better to keep your contact form simple and to the point. 
 Avoid adding unnecessary fields to make it less time consuming for your visitors to fill them out. 
 For example, do you really need each of their first name, middle initial, and last name? Also, what about their company, country, and phone number? 
 Some of this information might not be necessary for a contact form. 
+{{< /note >}}
 
 ## Step-by-step of using Formspree
 
