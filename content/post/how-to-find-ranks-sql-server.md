@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Find Ranks in SQL Server"
-description: "The three most important SQL Server ranking functions are here! Click to learn what they are, the differences between them, and examples of how to use them. "
+description: "The four significant SQL Server ranking functions are here! Learn what they are and the differences between them (including examples)."
 date: 2020-04-24T11:35:56+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1587949573/fitrianingrum.me/2020_ranking.png"
 tags: ["sql server"]
