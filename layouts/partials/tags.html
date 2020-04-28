@@ -1,4 +1,17 @@
 <aside>
+    {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+    <section id="categories" class="mx-4 mb-4 px-4 pt-4 pb-2 categories">
+        <div>
+            <span class="category-title">Categories</span>
+            <ul class="all-categories">
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <li><a href="/categories/{{ $name | urlize }}">{{ $name }} <small>({{ .Count }})</small></a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </section>
+    {{ end }}
+
     <section id="tags" class="mx-4 px-4 pt-4 pb-2 tags">
         <div>
             <span class="tag-title">All Tags</span>

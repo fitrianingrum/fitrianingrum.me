@@ -2,7 +2,7 @@
 title: "How to Add Contact Forms to Your Static Sites Using Formspree"
 description: "Do you have a static website and wondering how to add a contact form on it? This article shows you the step-by-step on how to add a dynamic contact form to your static website easily using Formspree."
 date: 2020-04-20T16:49:16+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/v1587377030/fitrianingrum.me/2020-contact-form.png"
+image: "https://res.cloudinary.com/phi21st/image/upload/v1587964617/fitrianingrum.me/2020_contact-form.png"
 tags: ["contact form", "formspree"]
 keywords: ["contact form using formspree", "formspree contact form"]
 categories: ["web development"]

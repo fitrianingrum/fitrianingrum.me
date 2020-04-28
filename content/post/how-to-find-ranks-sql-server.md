@@ -2,7 +2,7 @@
 title: "How to Find Ranks in SQL Server"
 description: "The four significant SQL Server ranking functions are here! Learn what they are and the differences between them (including examples)."
 date: 2020-04-24T11:35:56+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/v1587949573/fitrianingrum.me/2020_ranking.png"
+image: "https://res.cloudinary.com/phi21st/image/upload/v1587964999/fitrianingrum.me/2020_ranking.png"
 tags: ["sql server"]
 categories: ["database"]
 keywords: ["sql rank","sql server rank","ranking functions in sql server", "tsql ranking","row_number vs rank", "rank and dense_rank in sql"]
@@ -11,15 +11,16 @@ keywords: ["sql rank","sql server rank","ranking functions in sql server", "tsql
 Often, we want to know the ranking or position of a particular row compared to other rows based on a certain ordering sequence.
 In SQL Server, there are four [ranking functions](https://docs.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql?view=sql-server-ver15) 
 for assigning ranks. Those are `ROW_NUMBER`, `RANK`, `DENSE_RANK`, and `NTILE`. 
-This article covers how to use these ranking functions and their differences.
+This article covers how to use TSQL ranking functions and their differences.
 
-The table below contains a short summary of the ranking functions:
+Ranking functions are commonly used to identify the top X of something. 
+In the following table, we'll see a summary of SQL Server ranking functions.
 
 {{< table "table table-sm table-bordered" >}}
 | Function name    | Description                                                 |
 |------------------|-------------------------------------------------------------|
-| ROW_NUMBER       | It returns an incrementing number for every row in a result set (1,2,3...). There will be no duplicate ranking values in the result. |
-| RANK             | Same as `ROW_NUMBER`, the `RANK` function assigns increment numbers in the results. However, it assigns the same numbers for the same tied values. Thus, the numbers assigned are not unique  |
+| ROW_NUMBER       | It returns an incrementing number (1,2,3...) for every row in a result set. There will be no duplicate ranking values in the result. |
+| RANK             | Same as `ROW_NUMBER`, the `RANK` function assigns increment numbers in the results. However, it assigns the same numbers for the same tied values. Thus, the numbers assigned are not unique.  |
 | DENSE_RANK       | This function is almost the same as `RANK`. However, `DENSE_RANK` doesn't yield gaps in the rankings. For instance, when `RANK` gives a ranking of 1,4,4,4,5, `DENSE_RANK` assigns 1,2,2,2,3. In the dense ranking results, there are no jump numbers. |
 | NTILE            | It divides the result set into a defined number of buckets or groups. |
 {{</ table >}}

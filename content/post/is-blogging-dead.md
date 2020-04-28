@@ -2,7 +2,7 @@
 title: "Is Blogging Dead?"
 description: "You might have heard that blogging is finally dead and then thinking of abandoning your blogs. Before doing that, let's find out in this article, whether that's true or not."
 date: 2020-04-20T10:52:25+07:00
-image: "https://res.cloudinary.com/phi21st/image/upload/v1587374822/fitrianingrum.me/2020-blogging.png"
+image: "https://res.cloudinary.com/phi21st/image/upload/v1587964617/fitrianingrum.me/2020_blogging.png"
 tags: ["blog"]
 categories: ["writing"]
 keywords: ["blogging is not dead", "is blogging dead", "blogging is dead"]
