@@ -225,22 +225,6 @@ ul.related-posts {
     height: 120px;
 }
 
-/*Code command table*/
-
-/*table {
-    margin-bottom: 20px;
-    min-width: 50%;
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-
-    table > thead > tr > th {
-        border-bottom: 1pt #212529 solid;
-        padding: 0 5px 0 5px;
-    }
-    table > tbody > tr > td {
-        padding: 0 5px 0 5px;
-    }*/
-
 .highlight > div {
     margin-bottom: 20px;
 }
@@ -271,4 +255,21 @@ article {
 .card-header-title {
     color: #000000;
     letter-spacing: 0.0875rem;
+}
+
+/*Header Image*/
+.img-header {
+    position: relative;
+}
+
+.img-header-text-block {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: darkgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.7125rem;
 }

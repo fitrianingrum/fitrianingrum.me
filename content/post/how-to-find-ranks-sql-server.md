@@ -3,7 +3,11 @@ title: "How to Find Ranks in SQL Server"
 description: "The four significant SQL Server ranking functions are here! Learn what they are and the differences between them (including examples)."
 date: 2020-04-24T11:35:56+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1587964999/fitrianingrum.me/2020_ranking.png"
-tags: ["sql server"]
+imageAuthor: "Mateusz Dach"
+imageAuthorUrl: "https://www.pexels.com/@mateusz-dach-99805"
+imageSource: "Pexels"
+imageSourceUrl: "https://www.pexels.com/photo/332835"
+tags: ["sql server","sql"]
 categories: ["database"]
 keywords: ["sql rank","sql server rank","ranking functions in sql server", "tsql ranking","row_number vs rank", "rank and dense_rank in sql"]
 ---

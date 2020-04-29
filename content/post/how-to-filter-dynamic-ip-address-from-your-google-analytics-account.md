@@ -3,6 +3,10 @@ title: "How to Filter Dynamic IP Address From Your Google Analytics Account"
 description: "Do you want to exclude your own traffic from your Google Analytics account? Learn how to do it by using the Google Analytics Opt-out Add-on!"
 date: 2020-04-28T09:21:38+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1588132801/fitrianingrum.me/2020_ga.png"
+imageAuthor: "Timur Saglambilek"
+imageAuthorUrl: "https://www.pexels.com/@marketingtuig"
+imageSource: "Pexels"
+imageSourceUrl: "https://www.pexels.com/photo/185576"
 tags: ["google analytics"]
 keywords: ["filter dynamic ip from google analytics"]
 categories: ["web development"]

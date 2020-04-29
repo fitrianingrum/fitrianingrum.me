@@ -20,12 +20,12 @@
     <meta name="twitter:creator" content="@phi21st" />
 
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }}{{ end }}" />
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}" />
     {{ if .Description }}
     <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}" />
     {{ end }}
 
-    <title>{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}</title>
 
     {{ partial "seo.html" . }}
 

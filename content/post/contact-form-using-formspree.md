@@ -3,6 +3,10 @@ title: "How to Add Contact Forms to Your Static Sites Using Formspree"
 description: "Do you have a static website and wondering how to add a contact form on it? This article shows you the step-by-step on how to add a dynamic contact form to your static website easily using Formspree."
 date: 2020-04-20T16:49:16+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1587964617/fitrianingrum.me/2020_contact-form.png"
+imageAuthor: "Tumisu"
+imageAuthorUrl: "https://pixabay.com/users/tumisu-148124/"
+imageSource: "pixabay"
+imageSourceUrl: "https://www.pixabay.com/photos/2993000"
 tags: ["contact form", "formspree"]
 keywords: ["contact form using formspree", "formspree contact form"]
 categories: ["web development"]
@@ -21,8 +25,9 @@ It's very straightforward to set up&mdash;you don't need any backend code, even 
 In this article, we will learn how to create a simple contact form using Formspree.
 The final result will be similar to the [contact](/contact) form on this site, like in the following screenshot:
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587518786/fitrianingrum.me/2020-example-contact-form.jpg" alt="Contact form example" >}}
-
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587518786/fitrianingrum.me/2020-example-contact-form.jpg" 
+    alt="Contact form example"
+    title="Figure 1. Contact form example">}}
 
 {{< note >}}
 When building a contact form, it's better to keep your contact form simple and to the point. 
