@@ -5,7 +5,7 @@ date: 2020-04-28T05:43:35+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1588051806/fitrianingrum.me/2020_cube-rollup.png"
 tags: ["sql server","sql"]
 categories: ["database"]
-keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup"]
+keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup", "cube vs rollup"]
 ---
 
 When aggregating and summarizing data, you can use `CUBE` and `ROLLUP` to display total summaries.

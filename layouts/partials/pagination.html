@@ -7,7 +7,9 @@
                 {{ if $pag.HasPrev }}
                 <a class="newer-posts" href="{{ $pag.Prev.URL }}">&larr; Newer Posts</a>
                 {{ end }}
+                {{ if not .IsHome }}
                 <span class="page-number">Page {{ $pag.PageNumber }} of {{ $pag.TotalPages }}</span>
+                {{ end }}
                 {{ if $pag.HasNext }}
                 <a class="older-posts" href="{{ $pag.Next.URL }}">Older Posts &rarr;</a>
                 {{ end }}
