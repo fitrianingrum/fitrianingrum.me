@@ -18,6 +18,8 @@ body {
     font-weight: 600;
     color: #453135;
     font-family: 'Gochi Hand', cursive;
+    color: #f1f1f1;
+    letter-spacing: 0.1rem;
 }
 
 .form-inline.form-subscribe {
@@ -42,28 +44,27 @@ a {
         text-decoration: none;
     }
 
-h1, .h1, h2, .h2 {
-    font-family: 'Fira Sans', sans-serif;
-}
-
-h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
-    font-family: 'Poppins', sans-serif;
+h2, .h2, h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+    letter-spacing: 0.375px;
 }
 
 h1,
 .h1 {
     font-size: 1.625rem;
-    font-weight: 600;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #000000;
 }
 
     h1 > small > a, .h1 > small > a, h1 > a, .h1 > a {
-        color: #000000;
-        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        color: #212529;
     }
 
         h1 > small > a:hover, .h1 > small > a:hover, h1 > a:hover, .h1 > a:hover {
             color: #007bff;
-            font-weight: 500;
         }
 
 h2,
@@ -71,19 +72,21 @@ h2,
     font-size: 1.25rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    color: #000000;
+    font-weight: bold;
+    color: #212529;
 }
 
 h3,
 .h3 {
     font-size: 1rem;
     color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
 }
 
 h4,
 .h4 {
     font-size: 1rem;
-    color: #000000;
     text-decoration: underline;
 }
 
@@ -276,4 +279,16 @@ article {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 0.7125rem;
+}
+
+/*Note*/
+.note {
+    background: #f1f1f1;
+    padding: 0.5rem;
+}
+
+/*Code*/
+code {
+    color: firebrick;
+    font-size: 100%;
 }

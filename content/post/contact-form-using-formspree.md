@@ -44,7 +44,7 @@ The steps are simple and easy to follow. You can copy-paste the code snippets th
 **Step 1. Create an HTML form** 
 
 Copy-paste the following code into your HTML file then change the `your@email.com` with your real email address. 
-Make sure you don't change the values of **name**, **_replyto**, and **message** because Formspree will use these attribute values.
+Make sure you don't change the values of `name`, `_replyto`, and `message` because Formspree will use these attribute values.
 
 {{< highlight html "linenos=table" >}}
 <form action="https://formspree.io/your@email.com" method="POST">
