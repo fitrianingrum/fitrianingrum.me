@@ -1,10 +1,10 @@
 ---
 title: "Summarizing Data using CUBE and ROLLUP"
-description: "Are you looking for the ways of displaying totals or a grand total in your query result? Click to learn how to do that using CUBE and ROLLUP."
+description: "Looking for the ways of displaying totals or a grand total in your query result? Click to learn how to do that using CUBE and ROLLUP."
 date: 2020-04-28T05:43:35+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1588051806/fitrianingrum.me/2020_cube-rollup.png"
-tags: ["sql server","sql"]
-categories: ["database"]
+tags: ["sql server","sql","t-sql"]
+categories: ["data analysis"]
 keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup", "cube vs rollup"]
 ---
 
@@ -26,7 +26,7 @@ It is often used for reporting purposes, providing a simple way to return totals
 
 Now, let's see the following query that returns the total sales for each territory group in Europe and Pacific:
 
-{{< highlight sql "hl_lines=5">}}
+{{< highlight sql "linenos=table,hl_lines=5">}}
 SELECT	st.[Group] TerritoryGroup, SUM(soh.TotalDue) Sales
 FROM	Sales.SalesOrderHeader soh
 		INNER JOIN Sales.SalesTerritory st ON soh.TerritoryID = st.TerritoryID
@@ -37,7 +37,7 @@ GROUP BY CUBE(st.[Group])
 The result would be as follows:
 
 {{< table "table table-sm w-auto" >}}
-| TerritoryGroup| Sales			|
+| TerritoryGroup| Sales		    |
 |---------------|--------------:|
 | Europe		| 22173617.6297 |
 | Pacific		| 11814376.0952	|
@@ -48,7 +48,7 @@ See that an extra row was added to the bottom of the result set that shows the t
 
 In the next query, I'll add the `CountryRegionCode` in the `SELECT` list and also in the `GROUP BY` clause.
 
-{{< highlight sql "hl_lines=5">}}
+{{< highlight sql "linenos=table,hl_lines=5">}}
 SELECT	st.[Group] TerritoryGroup, st.CountryRegionCode Country, SUM(soh.TotalDue) Sales
 FROM	Sales.SalesOrderHeader soh
 		INNER JOIN Sales.SalesTerritory st ON soh.TerritoryID = st.TerritoryID
@@ -87,7 +87,7 @@ Thus, the order of the columns you place in the `GROUP BY ROLLUP` clause impacts
 
 Let's see the query below that retrieves the territory group, country, and total sales for Europe and Pacific territory groups.
 
-{{< highlight sql "hl_lines=5">}}
+{{< highlight sql "linenos=table,hl_lines=5">}}
 SELECT	st.[Group] TerritoryGroup, st.CountryRegionCode Country, SUM(soh.TotalDue) TotalSales
 FROM	Sales.SalesOrderHeader soh
 		INNER JOIN Sales.SalesTerritory st ON soh.TerritoryID = st.TerritoryID
@@ -113,7 +113,7 @@ And the last row was the grand total of all sales.
 
 In the following clause:
 
-{{< highlight sql>}}
+{{< highlight sql "linenos=inline,linenostart=5">}}
 GROUP BY ROLLUP(st.[Group], st.CountryRegionCode)
 {{</ highlight>}}
 

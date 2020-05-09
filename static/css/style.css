@@ -3,6 +3,7 @@ body {
     background-color: #f7f5f6;
     margin-top: 75px;
     font-size: 0.875rem;
+    color: #333;
 }
 
 .full-height {
@@ -44,22 +45,21 @@ a {
         text-decoration: none;
     }
 
-h2, .h2, h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+h1, .h1, h2, .h2, h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
     letter-spacing: 0.375px;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
 .h1 {
     font-size: 1.625rem;
-    font-weight: bold;
     letter-spacing: 0.5px;
     color: #000000;
 }
 
     h1 > small > a, .h1 > small > a, h1 > a, .h1 > a {
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.9375rem;
         font-weight: bold;
+        font-size: 0.9375rem;
         color: #212529;
     }
 
@@ -70,9 +70,8 @@ h1,
 h2,
 .h2 {
     font-size: 1.25rem;
-    margin-top: 1.25rem;
+    margin-top: 2rem;
     margin-bottom: 1.25rem;
-    font-weight: bold;
     color: #212529;
 }
 
@@ -120,7 +119,7 @@ figcaption > h4 {
 
 .list-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     text-align:center;
 }
 
@@ -195,6 +194,7 @@ figure.hovereffect {
 .tag-title, .category-title {
     font-weight: 400;
     font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul.all-categories,
@@ -212,8 +212,8 @@ ul.related-posts {
     }
         ul.all-categories > li > a,
         ul.all-tags > li > a {
-            color: #212529;
-            font-weight:300;
+            color: #444;
+            font-size: 13px;
         }
 
         ul .all-categories > li:before, ul.all-tags > li:before {
@@ -291,4 +291,13 @@ article {
 code {
     color: firebrick;
     font-size: 100%;
+}
+
+/*th fixed alignment got replaced by reboot css*/
+th[align=right] {
+    text-align: right;
+}
+
+th[align=center] {
+    text-align: center;
 }

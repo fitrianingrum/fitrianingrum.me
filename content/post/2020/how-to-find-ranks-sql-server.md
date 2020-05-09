@@ -7,8 +7,8 @@ imageAuthor: "Mateusz Dach"
 imageAuthorUrl: "https://www.pexels.com/@mateusz-dach-99805"
 imageSource: "Pexels"
 imageSourceUrl: "https://www.pexels.com/photo/332835"
-tags: ["sql server","sql"]
-categories: ["database"]
+tags: ["sql server","sql","t-sql"]
+categories: ["data analysis"]
 keywords: ["sql rank","sql server rank","ranking functions in sql server", "tsql ranking","row_number vs rank", "rank and dense_rank in sql"]
 ---
 

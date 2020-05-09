@@ -1,5 +1,4 @@
 <aside>
-    {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
     <section id="categories" class="mx-4 mb-4 px-4 pt-4 pb-2 categories">
         <div>
             <span class="category-title">Categories</span>
@@ -10,8 +9,8 @@
             </ul>
         </div>
     </section>
-    {{ end }}
 
+    {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
     <section id="tags" class="mx-4 px-4 pt-4 pb-2 tags">
         <div>
             <span class="tag-title">All Tags</span>
@@ -22,4 +21,5 @@
             </ul>
         </div>
     </section>
+    {{ end }}
 </aside>
