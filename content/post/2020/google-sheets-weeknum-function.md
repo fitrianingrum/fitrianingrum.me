@@ -38,10 +38,10 @@ Sample usages:
 {{< table "table table-sm table-bordered" >}}
 | Syntax                        | Explanation                                     |
 |-------------------------------|-------------------------------------------------|
-| WEEKNUM("5/13/2019")            | Will return 20, because May 13, 2019, is the 20th week of 2019. ___The **type** is not defined, so, by default, the calculation uses Sunday as the first day of the week. |
-| WEEKNUM("12/22/2019", 1)      | Will return 52, because December 22, 2019, is the 52nd week of 2019 if the week starts on Sunday. |
-| WEEKNUM(DATE(2019, 12, 22), 2) | Will return 51, because December 22, 2019, is the 51st week of 2019 if the week starts on Monday. |
-| WEEKNUM(43821, 2)              | 43821 is the number for December 22, 2019. The result will be 52 (the same as the above result). |
+| WEEKNUM("5/13/2019")			| Will return 20, because May 13, 2019, is the 20th week of 2019. ___The **type** is not defined, so, by default, the calculation uses Sunday as the first day of the week. |
+| WEEKNUM("12/22/2019",1)		| Will return 52, because December 22, 2019, is the 52nd week of 2019 if the week starts on Sunday. |
+| WEEKNUM(DATE(2019,12,22),2)	| Will return 51, because December 22, 2019, is the 51st week of 2019 if the week starts on Monday. |
+| WEEKNUM(43821,2)              | 43821 is the number for December 22, 2019. The result will be 52 (the same as the above result). |
 {{</ table >}}
 
 To understand how to use the function in **Google Sheets**, let’s take a look at the following example. 

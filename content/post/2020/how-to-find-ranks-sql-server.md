@@ -23,8 +23,8 @@ In the following table, we'll see a summary of SQL Server ranking functions.
 {{< table "table table-sm table-bordered" >}}
 | Function name    | Description                                                 |
 |------------------|-------------------------------------------------------------|
-| ROW_NUMBER       | It returns an incrementing number (1,2,3...) for every row in a result set. There will be no duplicate ranking values in the result. |
-| RANK             | Same as `ROW_NUMBER`, the `RANK` function assigns increment numbers in the results. However, it assigns the same numbers for the same tied values. Thus, the numbers assigned are not unique.  |
+| ROW_NUMBER       | It returns an incrementing number (1,2,3...) for every row in a result set. There will be no duplicate ranking values in the result. |
+| RANK			   | Same as `ROW_NUMBER`, the `RANK` function assigns increment numbers in the results. However, it assigns the same numbers for the same tied values. Thus, the numbers assigned are not unique.  |
 | DENSE_RANK       | This function is almost the same as `RANK`. However, `DENSE_RANK` doesn't yield gaps in the rankings. For instance, when `RANK` gives a ranking of 1,4,4,4,5, `DENSE_RANK` assigns 1,2,2,2,3. In the dense ranking results, there are no jump numbers. |
 | NTILE            | It divides the result set into a defined number of buckets or groups. |
 {{</ table >}}
@@ -35,10 +35,10 @@ Ranking functions are windowed functions. The syntax is the same for `ROW_NUMBER
 However, for `NTILE`, it has a slightly different syntax, which includes the `number_of_groups`, as shown in the table below.
 
 {{< table "table table-sm table-bordered" >}}
-| Function name | Syntax |
-| -----------|-------------|
-| ROW_NUMBER, RANK, or DENSE_RANK | function_name() OVER ([partition_by_clause] order_by_clause) |
-| NTILE | function_name(**number_of_groups**) OVER ([partition_by_clause] order_by_clause) |
+| Function name						| Syntax																			|
+| ----------------------------------|-----------------------------------------------------------------------------------|
+| ROW_NUMBER, RANK, or DENSE_RANK	| function_name() OVER ([partition_by_clause] order_by_clause)						|
+| NTILE								| function_name(**number_of_groups**) OVER ([partition_by_clause] order_by_clause)	|
 {{</ table >}}
 
 The syntax uses the following arguments:
@@ -61,7 +61,7 @@ Then, we'll rank the books using each of the ranking function and compare the re
 
 Copy-paste and execute the following SQL code to create the table.
 
-{{< highlight sql>}}
+{{< highlight sql "linenos=table">}}
 CREATE TABLE Book (
 	BookTitle NVARCHAR(20),
 	YearPublished INT,
@@ -88,7 +88,7 @@ SELECT * FROM Book
 In this example, we'll implement all the four functions to rank books based on their prices. 
 Notice that we don't define any partition in the code below.
 
-{{< highlight sql>}}
+{{< highlight sql "linenos=table">}}
 SELECT BookTitle
 	, YearPublished
 	, Price
@@ -126,7 +126,7 @@ Each group has five rows as the total number of rows (10) is divisible by the to
 
 In this example, we will divide the results by the `YearPublished` by adding an optional `PARTITION BY YearPublished` in the `OVER` clause.
 
-{{< highlight sql>}}
+{{< highlight sql "linenos=table">}}
 SELECT BookTitle
 	, YearPublished
 	, Price

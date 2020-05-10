@@ -293,7 +293,11 @@ code {
     font-size: 100%;
 }
 
-/*th fixed alignment got replaced by reboot css*/
+/*table*/
+th {
+    white-space: nowrap;
+}
+
 th[align=right] {
     text-align: right;
 }
