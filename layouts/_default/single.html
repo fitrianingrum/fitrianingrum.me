@@ -26,7 +26,7 @@
                         <div class="description mb-3 font-italic text-muted"> {{ .Description }}</div>
                         {{ .Content }}
                     </section>
-                    <section class="post-tag mb-4">
+                    <div class="post-tag mb-4">
                         {{ $taxo := "tags" }}
                         {{ range .Param $taxo }}
                         {{ $name := . }}
@@ -34,13 +34,13 @@
                         <a class="badge badge-secondary" href="{{ .Permalink }}">{{ $name }}</a>
                         {{ end }}
                         {{ end }}
-                    </section>
+                    </div>
 
                     {{ partial "related.html" .}}
 
-                    <section class="post-comment">
+                    <div class="post-comment">
                         {{ partial "disqus.html" .}}
-                    </section>
+                    </div>
                 </article>
             </div>
             <div class="col-md-4 col-sm-12">

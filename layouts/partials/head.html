@@ -10,26 +10,26 @@
     </script>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
     <meta name="author" content="{{ .Site.Params.Author }}">
-    <meta name="description" content="{{ if or (.IsHome) (not .Description) }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}">
+    <meta name="description" content="{{ if or (.IsHome) (not .Description) }}{{ .Site.Title }}{{ else }}{{ .Description }}{{ end }}">
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@phi21st" />
 
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}" />
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} {{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}" />
 
     {{ if .Description }}
-    <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}" />
+    <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Title }} {{ else }} {{ .Description }}{{ end }}" />
     {{ end }}
 
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
 
-    <title>{{ if .IsHome }}{{ .Site.Title }} {{ $.Site.Params.Description }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }} {{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}</title>
 
     {{ partial "seo.html" . }}
 

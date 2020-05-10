@@ -191,6 +191,11 @@ figure.hovereffect {
     border: solid 1px #ded8d8;
     background-color: #f1f1f1;
 }
+
+.tags > h1, .categories > h1 {
+    line-height: 0.8;
+}
+
 .tag-title, .category-title {
     font-weight: 400;
     font-size: 1.125rem;
@@ -262,6 +267,17 @@ article {
 .card-header-title {
     color: #000000;
     letter-spacing: 0.0875rem;
+}
+
+.card-header > h1 {
+    line-height: 0.8;
+}
+
+h1 > .card-header-title {
+    color: #000000;
+    letter-spacing: 0.0875rem;
+    font-weight: normal;
+    font-size: 0.875rem;
 }
 
 /*Header Image*/
