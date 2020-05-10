@@ -3,4 +3,5 @@
 {{ $old := "<table>" }}
 {{ $new := printf "<table class=\"%s\">" $class }}
 {{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable := replace $htmlTable "___" "<br />" }}
 {{ $htmlTable | safeHTML }}
