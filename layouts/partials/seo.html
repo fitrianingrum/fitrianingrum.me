@@ -7,18 +7,29 @@
     "@id": "{{ .Site.BaseURL }}"
     },
     "articleSection" : "{{ .Section }}",
-    "name" : "{{ if .IsHome }}{{ .Site.Title }} - {{ $.Site.Params.Description }}{{ else }}{{ .Title }}{{ end }}",
-    "headline" : "{{ if .IsHome }}{{ .Site.Title }} - {{ $.Site.Params.Description }}{{ else }}{{ .Title }}{{ end }}",
-    "description" : "{{ if or (.IsHome) (not .Description) }}{{ .Site.Title }} - {{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}",
+    "name" : "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}",
+    "headline" : "{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Params.Author }}{{ end }}",
+    "description" : "{{ if or (.IsHome) (not .Description) }}{{ .Site.Title }}{{ else }}{{ .Description }}{{ end }}",
     "inLanguage" : "en-US",
     "author" : "{{ $.Site.Params.Author }}",
     "creator" : "{{ $.Site.Params.Author }}",
-    "publisher": "{{ $.Site.Params.Author }}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ $.Site.Params.Author }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.fitrianingrum.me/img/favicon.ico"
+        }
+    },
+    "image": {
+        "@type": "imageObject",
+        "url": "https://www.fitrianingrum.me/img/favicon.ico"
+    },
     "accountablePerson" : "{{ $.Site.Params.Author }}",
     "copyrightHolder" : "{{ $.Site.Params.Author }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "datePublished": "{{ .Date }}",
-    "dateModified" : "{{ .Date }}",
+    "datePublished": "{{ .Date.Format "January 2, 2006" }}",
+    "dateModified" : "{{ .Lastmod.Format "January 2, 2006" }}",
     "url" : "{{ .Permalink }}",
     "wordCount" : "{{ .WordCount }}",
     "keywords" : [ {{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}",{{ end }}{{ end }}"{{ .Title }}" ]
