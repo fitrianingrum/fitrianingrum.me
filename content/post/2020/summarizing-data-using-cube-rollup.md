@@ -3,7 +3,7 @@ title: "Summarizing Data using CUBE and ROLLUP"
 description: "Looking for the ways of displaying totals or a grand total in your query result? Click to learn how to do that using CUBE and ROLLUP."
 date: 2020-04-28T05:43:35+07:00
 image: "https://res.cloudinary.com/phi21st/image/upload/v1588051806/fitrianingrum.me/2020_cube-rollup.png"
-tags: ["sql server","sql","t-sql"]
+tags: ["sql server","sql","tsql"]
 categories: ["data analysis"]
 keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup", "cube vs rollup"]
 ---

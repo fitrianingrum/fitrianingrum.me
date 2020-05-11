@@ -3,7 +3,7 @@
         <span class="category-title">All Categories</span>
         <ul class="all-categories">
             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-            <li><a href="/categories/{{ $name | urlize }}">{{ $name }} <small>({{ .Count }})</small></a></li>
+            <li><a href="/categories/{{ $name | urlize }}">{{ replace $name "-" " " }} <small>({{ .Count }})</small></a></li>
             {{ end }}
         </ul>
     </div>
@@ -13,7 +13,7 @@
         <span class="tag-title">All Tags</span>
         <ul class="all-tags">
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-            <li><a href="/tags/{{ $name | urlize }}">{{ $name }} <small>({{ .Count }})</small></a></li>
+            <li><a href="/tags/{{ $name | urlize }}">{{ replace $name "-" " " }} <small>({{ .Count }})</small></a></li>
             {{ end }}
         </ul>
     </div>

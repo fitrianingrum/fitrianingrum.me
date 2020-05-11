@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 p-0 mb-4 bg-white shadow">
                 <div class="my-3">
-                    {{ if not (eq .Permalink "/post/") }}
+                    {{ if not (in .Permalink "/post/") }}
                     <div class="text-center list-title my-3">All posts with {{ .Data.Singular }} '{{ lower .Title }}'</div>
                     {{ end }}
 
