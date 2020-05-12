@@ -37,8 +37,8 @@ However, for `NTILE`, it has a slightly different syntax, which includes the `nu
 {{< table "table table-sm table-bordered" >}}
 | Function name						| Syntax																			|
 | ----------------------------------|-----------------------------------------------------------------------------------|
-| ROW_NUMBER, RANK, or DENSE_RANK	| function_name() OVER ([partition_by_clause] order_by_clause)						|
-| NTILE								| function_name(**number_of_groups**) OVER ([partition_by_clause] order_by_clause)	|
+| ROW_NUMBER, RANK, or DENSE_RANK	| function_name() ___OVER ([partition_by_clause] order_by_clause)						|
+| NTILE								| function_name(**number_of_groups**) ___OVER ([partition_by_clause] order_by_clause)	|
 {{</ table >}}
 
 The syntax uses the following arguments:

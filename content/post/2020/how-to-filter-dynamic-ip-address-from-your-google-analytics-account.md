@@ -12,7 +12,7 @@ keywords: ["filter dynamic ip from google analytics"]
 categories: ["web development"]
 ---
 
-The problem is, you have a website, but you don't want your browsing activities on this website being collected and used by your Google Analytics account. 
+You have a website, but you don't want your browsing activities on this website being collected and used by your Google Analytics account. 
 
 If you have a static IP address, excluding your own traffic is very easy---you just need to add your IP address in the exclude filter in your Google Analytics account.
 

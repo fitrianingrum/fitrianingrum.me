@@ -1,9 +1,9 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f7f5f6;
     margin-top: 75px;
     font-size: 0.875rem;
-    color: #333;
+    color: #505050;
 }
 
 .full-height {
@@ -46,21 +46,19 @@ a {
     }
 
 h1, .h1, h2, .h2, h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
-    letter-spacing: 0.375px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #404040;
 }
 
 h1,
 .h1 {
     font-size: 1.625rem;
     letter-spacing: 0.5px;
-    color: #000000;
 }
 
     h1 > small > a, .h1 > small > a, h1 > a, .h1 > a {
-        font-weight: bold;
-        font-size: 0.9375rem;
-        color: #212529;
+        font-size: 1rem;
+        color: #000000;
     }
 
         h1 > small > a:hover, .h1 > small > a:hover, h1 > a:hover, .h1 > a:hover {
@@ -72,13 +70,11 @@ h2,
     font-size: 1.25rem;
     margin-top: 2rem;
     margin-bottom: 1.25rem;
-    color: #212529;
 }
 
 h3,
 .h3 {
     font-size: 1rem;
-    color: #000000;
     margin-bottom: 1rem;
     margin-top: 1.25rem;
 }
@@ -93,7 +89,7 @@ figcaption > h4 {
     text-decoration: none;
     text-align: center;
     font-size: 0.875rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
     margin: 8px 0 32px 0;
 }
@@ -118,9 +114,9 @@ figcaption > h4 {
 }
 
 .list-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
 .site-pagination {
@@ -181,8 +177,7 @@ figure.hovereffect {
 }
 
 .subscribe-title {
-    font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -199,7 +194,7 @@ figure.hovereffect {
 .tag-title, .category-title {
     font-weight: 400;
     font-size: 1.125rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul.all-categories,
@@ -264,17 +259,11 @@ article {
 }
 
 /*Cards*/
-.card-header-title {
-    color: #000000;
-    letter-spacing: 0.0875rem;
-}
-
 .card-header > h1 {
     line-height: 0.8;
 }
 
 h1 > .card-header-title {
-    color: #000000;
     letter-spacing: 0.0875rem;
     font-weight: normal;
     font-size: 0.875rem;

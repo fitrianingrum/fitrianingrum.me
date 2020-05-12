@@ -8,23 +8,20 @@ categories: ["data analysis"]
 keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup", "cube vs rollup"]
 ---
 
-When aggregating and summarizing data, you can use `CUBE` and `ROLLUP` to display total summaries.
+When aggregating and summarizing data, we can use `CUBE` and `ROLLUP` to display total summaries.
 While CUBE adds summarizing total values to a result set based on columns in the `GROUP BY` clause, 
 `ROLLUP` adds hierarchical data summaries based on the ordering of columns.
 In this article, I'll demonstrate the ways of summarizing data using these operators.
 
 I'll start by describing how to summarize data with `CUBE`. 
 
-{{< note >}}
-All the SQL code in the examples can be executed in SQL Server's AdventureWorks2017 sample database.
-{{< /note >}}
-
 ## Summarizing the total using CUBE
 
-The `CUBE` operator adds rows to your result set, summarizing total values based on the columns in the `GROUP BY` clause.
+The `CUBE` operator adds rows to our result set, summarizing total values based on the columns in the `GROUP BY` clause.
 It is often used for reporting purposes, providing a simple way to return totals by grouped columns.
 
-Now, let's see the following query that returns the total sales for each territory group in Europe and Pacific:
+I use the SQL Server's AdventureWorks2017 sample database to
+run the following query that returns the total sales for each territory group in Europe and Pacific:
 
 {{< highlight sql "linenos=table,hl_lines=5">}}
 SELECT	st.[Group] TerritoryGroup, SUM(soh.TotalDue) Sales

@@ -46,7 +46,7 @@ Sample usages:
 
 To understand how to use the function in **Google Sheets**, let’s take a look at the following example. 
 
-## Using WEEKNUM in Google Sheets
+## Step-by-step: using WEEKNUM in Google Sheets
 
 The spreadsheet in **Figure 1** below has a series of dates in cells **B3** through **B11**. 
 Notice that the date format is in `mm/dd/yyyy`. 
@@ -62,8 +62,8 @@ We will fill the week numbers in cells **D3** through **D11** using the `WEEKNUM
 
 **Step 1**. Click on **Cell D3**.
 
-**Step 2**. Type the formula `=WEEKNUM(B3)`, then press **Enter*. 
-You will see that *D3*'s value is 3, indicating that January 15, 2020, is the 3rd week of 2020.
+**Step 2**. Type the formula `=WEEKNUM(B3)`, then press **Enter**. 
+You will see that **D3**'s value is 3, indicating that January 15, 2020, is the 3rd week of 2020.
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1589005846/fitrianingrum.me/2020_googlesheet-weeknum-fig2.jpg" 
 	alt="Step 2. Type the formula"
