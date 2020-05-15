@@ -6,13 +6,14 @@
                 <article class="post">
                     
                     {{ if not .Params.hideTitleAndDate}}
-                    {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
-                    <small class="text-muted">Created on {{ .Date.Format "January 2, 2006" }}, by {{ $.Site.Params.Author }}</small>
-                    {{ end }}
+                    <!--{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}-->
+                    <small class="text-muted"><span class="fa fa-calendar">&nbsp;</span>{{ upper (.Date.Format "January 2, 2006") }}, by {{ upper $.Site.Params.Author }}</small>
+                    <!--{{ end }}-->
                     <h1 class="post-title mt-2 mb-3">{{ .Title }}</h1>
                     {{ end }}
 
                     <section class="post-content">
+                        <div class="description mb-3 font-italic text-muted"> {{ .Description }}</div>
                         {{if .Params.image }}
                         <div class="img-header">
                             <img class="mb-4" src="{{ .Params.image }}" alt="Header image - {{ .Title }}">
@@ -23,10 +24,10 @@
                             {{ end }}
                         </div>
                         {{ end }}
-                        <div class="description mb-4 font-italic text-muted"> {{ .Description }}</div>
+
                         {{ .Content }}
                     </section>
-                    <div class="post-tag mb-4">
+                    <div class="post-tag my-4">
                         {{ $taxo := "tags" }}
                         {{ range .Param $taxo }}
                         {{ $name := . }}

@@ -1,0 +1,11 @@
+﻿<div class="question p-2 mt-4">
+    <div class="pb-3"><b>Question {{ .Get "id" }}. </b></div>
+    {{ .Inner | markdownify }}
+
+    <a href="#" id="btn-show-answer-{{ .Get "id" }}" class="show-answer mb-2">Show answer</a>
+
+    <div id="answer-for-{{ .Get "id" }}" class="question d-none mb-2 pt-2">
+        <b>Answer:</b> {{ .Get "answer" }}
+        <br />{{ .Get "explanation" }}
+    </div>
+</div>

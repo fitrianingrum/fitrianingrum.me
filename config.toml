@@ -23,7 +23,7 @@ canonifyURLs = true
 [params]
     Author = "Fitrianingrum"
 	Description = "blog and personal website"
-    SiteTagline = "Writing, blogging..."
+    SiteTagline = "Coding, blogging"
     NavLinks = [
 		{ url = "/post", title = "Blogs" },
         { url = "/contact", title = "Contact" }
@@ -34,4 +34,4 @@ canonifyURLs = true
     tag = "tags"
 
 [permalinks]
-	post = "post/:title/"
+	post = "post/:filename/"
