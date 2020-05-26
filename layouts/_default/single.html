@@ -9,7 +9,7 @@
                     <!--{{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}-->
                     <small class="text-muted"><span class="fa fa-calendar">&nbsp;</span>{{ upper (.Date.Format "January 2, 2006") }}, by {{ upper $.Site.Params.Author }}</small>
                     <!--{{ end }}-->
-                    <h1 class="post-title mt-2 mb-3">{{ .Title }}</h1>
+                    <h1 class="post-title mt-2 mb-3"><span class="linear-highlight">{{ .Title }}</span></h1>
                     {{ end }}
 
                     <section class="post-content">
