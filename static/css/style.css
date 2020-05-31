@@ -6,6 +6,11 @@ body {
     color: #505050;
 }
 
+html, body {
+    scroll-padding-top: 75px;
+    scroll-behavior: smooth;
+}
+
 .full-height {
     height: calc(100% - 200px) !important;
     min-height: calc(100% - 200px) !important;
@@ -76,7 +81,7 @@ h3,
 .h3 {
     font-size: 1rem;
     margin-bottom: 1rem;
-    margin-top: 1.25rem;
+    margin-top: 1.375rem;
     color: #000000;
 }
 
@@ -87,7 +92,7 @@ h4,
 }
 
 .linear-highlight {
-    background-image: linear-gradient(0deg, #CCFFF7 50%,transparent 50%);
+    background-image: linear-gradient(0deg, #B0E0E6 50%,transparent 50%);
 }
 
 figcaption > h4 {
@@ -186,17 +191,17 @@ figure.hovereffect {
     text-align: center;
 }
 
-/* Tags */
-.tags, .categories {
+/* Tags, categories, and related posts */
+.tags, .categories, .toc {
     border: solid 1px #ded8d8;
     background-color: #f1f1f1;
 }
 
-.tags > h1, .categories > h1 {
+.tags > h1, .categories > h1, .toc > h1 {
     line-height: 0.8;
 }
 
-.tag-title, .category-title {
+.tag-title, .category-title, .toc-title {
     font-weight: 400;
     font-size: 1.125rem;
     font-family: 'Montserrat', sans-serif;
@@ -215,6 +220,7 @@ ul.related-posts {
         padding: 0 0 0 0.625rem;
         text-indent: -1rem;
     }
+
         ul.all-categories > li > a,
         ul.all-tags > li > a {
             color: #444;
@@ -229,6 +235,41 @@ ul.related-posts {
             content: '»';
             padding-right: 0.625rem;
         }
+
+/* TOC  */
+#TableOfContents > ul, #TableOfContents > ul > li > ul {
+    font-size: 13px;
+    list-style: none;
+    padding: 8px 0 0 8px;
+}
+
+    #TableOfContents > ul > li > ul {
+        font-size: 12px;
+        list-style: none;
+        padding: 8px 0 12px 8px;
+    }
+
+    #TableOfContents > ul > li {
+        padding: 0 0 0 0.625rem;
+        text-indent: -1rem;
+        list-style: none;
+        font-size: 13px;
+    }
+
+        #TableOfContents > ul > li > a, 
+        #TableOfContents > ul > li > ul > li > a {
+            text-decoration: none;
+            color: #444;
+        }
+
+            #TableOfContents > ul > li > a:hover,
+            #TableOfContents > ul > li > ul > li > a:hover {
+                text-decoration: none;
+                color: #007bff;
+            }
+
+
+/* ----- End of TOC  */
 
 .site-description {
     font-size: 1rem;
