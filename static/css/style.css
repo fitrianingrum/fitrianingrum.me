@@ -225,7 +225,14 @@ ul.related-posts {
         ul.all-tags > li > a {
             color: #444;
             font-size: 13px;
+            transition: all 100ms ease-in-out;
         }
+
+            ul.all-categories > li > a:hover,
+            ul.all-tags > li > a:hover {
+                text-decoration: none;
+                color: #007bff;
+            }
 
         ul .all-categories > li:before, ul.all-tags > li:before {
             padding-right: 0.625rem;
@@ -237,6 +244,17 @@ ul.related-posts {
         }
 
 /* TOC  */
+
+.toc {
+    position: sticky; 
+    top: 5.25rem; 
+    align-self: start;
+}
+
+nav#TableOfContents a {
+    transition: all 100ms ease-in-out;
+}
+
 #TableOfContents > ul, #TableOfContents > ul > li > ul {
     font-size: 13px;
     list-style: none;
@@ -267,8 +285,6 @@ ul.related-posts {
                 text-decoration: none;
                 color: #007bff;
             }
-
-
 /* ----- End of TOC  */
 
 .site-description {
