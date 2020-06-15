@@ -1,30 +1,36 @@
 {{ define "main" }}
-    <main class="content m-4 p-2">
-        <div class="container">
-            <div class="text-center mb-4 section-title">&mdash; Recent posts &mdash;</div>
-            <div class="card-deck justify-content-center">
-                {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "post") 3 }}
-                {{ range $paginator.Pages }}
-                <article class="post card mb-3 shadow bg-white" style="min-width: 21.25rem;max-width: 21.25rem;">
-                    {{ if .Params.image }}<a href="{{ .Permalink }}"><img src="{{ replace .Params.image "/upload" "/upload/w_300" }}" class="card-img-top" alt="post image"></a>{{ end }}
-                    <div class="card-header">
-                        <h1><a class="card-header-title" href="{{ .Permalink }}">{{ upper .Title }}</a></h1>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
+<main class="content m-4 pt-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 p-0 mb-4 bg-white shadow">
+                <div class="my-3">
+                    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "post") 10 }}
+                    {{ range $paginator.Pages }}
+                    <article class="m-0 px-4 py-3 border-bottom">
+                        <!--<small class="text-muted">{{ .Date.Format "January 2, 2006" }}</small>-->
+                        <h1><small><a href="{{ .Permalink }}">{{ .Title }}</a></small></h1>
+                        <section class="post-content">
                             {{ .Description }}
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-text"><small class="text-muted">{{- partial "readingtime.html" . -}}</small></span>
-                        <a class="card-link float-right" href="{{ .Permalink }}">continue reading &raquo; </a>
-                    </div>
-                </article>
-                {{ end }}
+                            <small class="pb-1 min-read">
+                                ... <a href="{{ .Permalink }}">continue reading</a> ({{- partial "readingtime.html" . -}})
+                            </small>
+                        </section>
+                    </article>
+                    {{ end }}
+                    {{ partial "pagination.html" . }}
+                </div>
             </div>
-            <div>
-                {{ partial "pagination.html" . }}
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ partial "tags.html" .}}
+                    </div>
+                    <div class="col-sm-12 pt-4">
+                        {{ partial "subscribe-newsletter.html" .}}
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 {{ end }}

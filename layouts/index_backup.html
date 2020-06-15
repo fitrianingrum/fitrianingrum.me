@@ -1,0 +1,30 @@
+{{ define "main" }}
+    <main class="content m-4 p-2">
+        <div class="container">
+            <div class="text-center mb-4 section-title">&mdash; Recent posts &mdash;</div>
+            <div class="card-deck justify-content-center">
+                {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "post") 3 }}
+                {{ range $paginator.Pages }}
+                <article class="post card mb-3 shadow bg-white" style="min-width: 21.25rem;max-width: 21.25rem;">
+                    {{ if .Params.image }}<a href="{{ .Permalink }}"><img src="{{ replace .Params.image "/upload" "/upload/w_300" }}" class="card-img-top" alt="post image"></a>{{ end }}
+                    <div class="card-header">
+                        <h1><a class="card-header-title" href="{{ .Permalink }}">{{ upper .Title }}</a></h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            {{ .Description }}
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-text"><small class="text-muted">{{- partial "readingtime.html" . -}}</small></span>
+                        <a class="card-link float-right" href="{{ .Permalink }}">continue reading &raquo; </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+            <div>
+                {{ partial "pagination.html" . }}
+            </div>
+        </div>
+    </main>
+{{ end }}
