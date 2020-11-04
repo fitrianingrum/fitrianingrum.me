@@ -8,7 +8,7 @@
             <div class="col-lg-6 col-md-8 col-sm-12 p-4 mb-4 d-block bg-white shadow">
                 <article class="post">
                     {{ if not .Params.hideTitleAndDate }}
-                    <small class="text-muted"><span class="fa fa-calendar">&nbsp;</span>Last updated on {{ upper (.Lastmod.Format "January 2, 2006") }}, by {{ upper $.Site.Params.Author }}</small>
+                    <small class="text-muted"><span class="fa fa-calendar">&nbsp;</span>{{ upper (.Date.Format "January 2, 2006") }}, by {{ upper $.Site.Params.Author }}</small>
                     <h1 class="post-title mt-2 mb-3"><span class="linear-highlight">{{ .Title }}</span></h1>
                     {{ end }}
 

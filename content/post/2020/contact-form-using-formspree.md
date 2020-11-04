@@ -97,7 +97,7 @@ After following the four steps above, your final code will look like this:
 </form>
 {{< /highlight >}}
 
-**Step 6. Checking the result**
+**Step 6. Check the result**
 
 Finally, it's time to ensure your contact form works. Fill in the fields and then submit it. 
 After a few seconds, you will get an email from Formspree asking you to confirm your email address.

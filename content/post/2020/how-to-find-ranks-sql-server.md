@@ -122,7 +122,7 @@ Different from the `RANK` function, `DENSE_RANK` doesn't return gaps. For dense 
 For the **Ntile** column, the results were divided into two groups. 
 Each group has five rows as the total number of rows (10) is divisible by the total number of groups (2). 
 
-## Example 2. Using partition
+### Example 2. Using partition
 
 In this example, we will divide the results by the `YearPublished` by adding an optional `PARTITION BY YearPublished` in the `OVER` clause.
 
