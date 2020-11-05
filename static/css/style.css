@@ -354,6 +354,26 @@ h1 > .card-header-title {
     padding: 0.5rem;
 }
 
+/*Blockquote*/
+.blockquote {
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem !important;
+    font-size: inherit !important;
+    position: relative;
+}
+
+.blockquote:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    color: #ded8d8;
+}
+
+.blockquote:before {
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+
 /*Code*/
 code {
     color: firebrick;
