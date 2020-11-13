@@ -2,6 +2,7 @@
 title: "Email Confirmation in ASP.NET Core using SendGrid"
 description: "Learn the step-by-step to enable account confirmation in ASP.NET Core using SendGrid to prevent a newly registered user from logging in until their email has been confirmed."
 date: 2020-11-10T08:44:09+07:00
+lastmod: 2020-11-11T11:56:08+07:00
 image: ""
 imageAuthor: ""
 imageAuthorUrl: ""
@@ -124,7 +125,14 @@ PM> Install-Package SendGrid
 
 ```
 
-**Step 12.** Go to SendGrid's website (https://signup.sendgrid.com/) and sign up for a new account for free. Skip this step if you already have a SendGrid account. 
+**Step 12.** Go to SendGrid's website (https://signup.sendgrid.com/) and sign up for a new account. 
+It's free, but you might need to contact their Customer Support to activate the new account. 
+
+Skip this step if you already have a SendGrid account. 
+
+{{< note >}}
+If you have an Azure account, you can [sign up for a new SendGrid account from the Azure portal](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email), which I think is more straightforward.
+{{< /note >}}
 
 **Step 13.** Sign in to your SendGrid account and [create a new API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key). 
 
@@ -232,4 +240,8 @@ After registering successfully, you will be asked to check your email to confirm
 
 ## References
 
-* "Account confirmation and password recovery in ASP.NET Core.", https://docs.microsoft.com/en-us/aspnet/core/security/authentication/accconfirm?view=aspnetcore-3.1&tabs=visual-studio. Accessed 11 11 2020.
+* _Account confirmation and password recovery in ASP.NET Core_.
+Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/aspnet/core/security/authentication/accconfirm?view=aspnetcore-3.1&tabs=visual-studio
+
+* _How to Send Email Using SendGrid with Azure_.
+Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email
