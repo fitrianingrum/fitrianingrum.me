@@ -26,7 +26,7 @@ Let's create a new ASP.NET Core Web Application with Identity using Visual Studi
 
 **Step 1.** In **Visual Studio**, go to **File** > **New** > **Project**. After that, select **ASP.NET Core Web Application** from templates, then click the **Next** button.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/01-create-new-web-app.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_60,w_600/v1605175680/fitrianingrum.me/2020-aspnet-core-sendgrid/01-create-new-web-app.gif" 
 	title="Figure 1. Creating a new ASP.NET Core Web Application project" 
 	alt="Creating a new ASP.NET Core Web Application project"
 	width="600"
@@ -35,7 +35,7 @@ Let's create a new ASP.NET Core Web Application with Identity using Visual Studi
 **Step 2.** In the **Configure your new project** window, give your project a name, for example, `AspNetCoreEmailConfirmationSendGrid`. 
 Then, choose a folder on your computer where you'd like to save it. After that, click the **Create** button.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/02-configure-project-name-location.jpg" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175571/fitrianingrum.me/2020-aspnet-core-sendgrid/02-configure-project-name-location.jpg" 
 	title="Figure 2. Configuring the project's name and location" 
 	alt="Configuring the project's name and location"
 	width="600"
@@ -44,7 +44,7 @@ Then, choose a folder on your computer where you'd like to save it. After that, 
 **Step 3.** From templates, select **Web Application (Model-View-Controller)**, and don't forget to change the **Authentication** to **Individual User Accounts**.
 Leave other options as they are. When finished, click the **Create** button. Wait until the project has been created successfully.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/03-mvc-project-with-identity.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175604/fitrianingrum.me/2020-aspnet-core-sendgrid/03-mvc-project-with-identity.gif" 
 	title="Figure 3. Creating an MVC project with Identity" 
 	alt="Creating an MVC project with Identity"
 	width="600"
@@ -54,7 +54,7 @@ Leave other options as they are. When finished, click the **Create** button. Wai
 
 **Step 4.** Go to the **Solution Explorer**, then double-click the `appsettings.json` file to open it. Modify your connection string so that it points to the correct database server.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/04-appsettings.jpg" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175570/fitrianingrum.me/2020-aspnet-core-sendgrid/04-appsettings.jpg" 
 	title="Figure 4. Modifying the connection string" 
 	alt="Modifying the connection string"
 	width="600"
@@ -69,7 +69,7 @@ PM> update-database
 
 ```
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/05-update-database.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_70,w_600/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/05-update-database.gif" 
 	title="Figure 5. Setting up the database" 
 	alt="Setting up the database"
 	width="600"
@@ -77,7 +77,7 @@ PM> update-database
 
 **Step 6.** Open the **SQL Server Management Studio (SSMS)** and verify that the new database has been created successfully, including the user-related tables.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/06-user-related-tables.jpg" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175570/fitrianingrum.me/2020-aspnet-core-sendgrid/06-user-related-tables.jpg" 
 	title="Figure 6. User-related tables in SQL Server Database" 
 	alt="User-related tables"
 	width="600"
@@ -95,7 +95,7 @@ In the steps below, we will scaffold the `RegisterConfirmation` code only. Howev
 Set the **Data context class** to **ApplicationDbContext** by selecting the value from the dropdown. 
 Then, click the **Add** button to apply the changes.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/07-scaffold-registerconfirmation.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175667/fitrianingrum.me/2020-aspnet-core-sendgrid/07-scaffold-registerconfirmation.gif" 
 	title="Figure 7. Scaffolding RegisterConfirmation code" 
 	alt="Scaffolding RegisterConfirmation code"
 	width="600"
@@ -107,7 +107,7 @@ Verify that you can click each menu in the navigation bar without any errors.
 You can also try to register and confirm your newly registered account.
 However, at this stage, you won't receive any email when confirming your account.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/08-running-the-web-app.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175610/fitrianingrum.me/2020-aspnet-core-sendgrid/08-running-the-web-app.gif" 
 	title="Figure 8. Running the Web Application" 
 	alt="Running the Web Application"
 	width="600"
@@ -207,7 +207,7 @@ public void ConfigureServices(IServiceCollection services)
 
 **Step 18.** Open the `RegisterConfirmation.cshtml.cs` file, which is located under `Areas/Identity/Pages/Account`. Remove the following code (line 45):
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/16-modify-registerconfirmation.jpg" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175595/fitrianingrum.me/2020-aspnet-core-sendgrid/16-modify-registerconfirmation.jpg" 
 	title="Figure 9. Modifying the RegisterConfirmation file" 
 	alt="Modifying the RegisterConfirmation file"
 	width="600"
@@ -222,7 +222,7 @@ Now, let's follow the steps below to test all the changes we made.
 **Step 20.** Click the **Register** menu and register a new account. 
 After registering successfully, you will be asked to check your email to confirm your account. 
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/18-register.gif" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175606/fitrianingrum.me/2020-aspnet-core-sendgrid/18-register.gif" 
 	title="Figure 10. Registering a new account" 
 	alt="Registering a new account"
 	width="600"
@@ -232,7 +232,7 @@ After registering successfully, you will be asked to check your email to confirm
 
 **Step 20.** Click the hyperlink to confirm your new account. After that, you should be able to login successfully.
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1605175681/fitrianingrum.me/2020-aspnet-core-sendgrid/19-check-inbox.jpg" 
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175607/fitrianingrum.me/2020-aspnet-core-sendgrid/19-check-inbox.jpg" 
 	title="Figure 11. Confirming account" 
 	alt="Confirming account"
 	width="600"
