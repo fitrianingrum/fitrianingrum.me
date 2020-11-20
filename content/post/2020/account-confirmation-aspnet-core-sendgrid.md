@@ -256,10 +256,11 @@ After confirming your email by clicking the hyperlink, you should be able to log
 
 ## Conclusion
 
-Confirming users' emails helps to verify they're not impersonating someone else. Besides, it prevents them from receiving unwanted emails from your application.
-
 You've learned how to enable account confirmation in ASP.NET Core using SendGrid, which is one of the most popular email service providers. 
 Of course, you can use other email service providers, but SendGrid is worth checking out.
+
+By confirming users' emails, it helps to verify they're not impersonating someone else. 
+Besides, it prevents them from receiving unwanted emails from your application.
 
 ## References
 
