@@ -15,12 +15,26 @@ keywords: ["aspnet core sendgrid", "asp net core sendgrid", "asp net core sendgr
 
 It's a best practice to confirm the email of a newly registered user to verify that they're not impersonating someone else. 
 You generally want to prevent new users from accessing or posting any data to your web application before being confirmed by email, SMS text message, or another mechanism.
+
 This article provides the step-by-step to enable email confirmation in ASP.NET Core Web Application using [SendGrid](https://sendgrid.com/). 
+
+## What is SendGrid?
+
+[SendGrid](https://sendgrid.com/) is one of the most popular cloud-based email service providers. It sends transactional and marketing emails and is popular among email marketers and developers.
+
+It was initially built as a transactional email service and then [acquired by Twilio in January 2019](https://www.twilio.com/press/releases/twilio-completes-acquisition-sendgrid), becomes Twilio SendGrid.
+
+There are [425+ other email sending services](https://www.emailvendorselection.com/email-service-provider-list/), including [Mailgun](https://www.mailgun.com/) and [Mandrill by MailChimp](https://www.mandrill.com/), which are also popular and commonly used.
+So, if you are looking for an alternative tool, you have lots to choose from. 
+
+However, in this article, we are going to use SendGrid, because it's not only popular but also known for being reliable, well-documented, easy to set up, and _cheap_!.
+
+## Step-by-step: Email Confirmation using SendGrid
 
 I am using [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) and [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) Community Edition.
 You can also use any versions of Visual Studio 2017 (or later) that you may have.
 
-## --- Create a Web Application with Identity
+### --- Create a Web Application with Identity
 
 Let's create a new ASP.NET Core Web Application with Identity using Visual Studio and store user-related data using MS SQL Server Database.
 
@@ -50,7 +64,7 @@ Leave other options as they are. When finished, click the **Create** button. Wai
 	width="600"
 	class="text-center" >}}
 
-## --- Set up the database
+### --- Set up the database
 
 **Step 4.** Go to the **Solution Explorer**, then double-click the `appsettings.json` file to open it. Modify your connection string so that it points to the correct database server.
 
@@ -83,7 +97,7 @@ PM> update-database
 	width="600"
 	class="text-center" >}}
 
-## --- Scaffold the Identity code
+### --- Scaffold the Identity code
 
 In the steps below, we will scaffold the `RegisterConfirmation` code only. However, feel free to scaffold a few more files if you'd like to.
 
@@ -113,7 +127,7 @@ However, at this stage, you won't receive any email when confirming your account
 	width="600"
 	class="text-center" >}}
 
-## --- Configure SendGrid for Email Confirmation
+### --- Configure SendGrid for Email Confirmation
 
 Now, let's add the functionality to confirm a newly registered account by sending an email confirmation. 
 
@@ -213,7 +227,7 @@ public void ConfigureServices(IServiceCollection services)
 	width="600"
 	class="text-center" >}}
 
-## --- Test the email confirmation 
+### --- Test the email confirmation 
 
 Now, let's follow the steps below to test all the changes we made. 
 
@@ -230,13 +244,22 @@ After registering successfully, you will be asked to check your email to confirm
 
 **Step 21.** Check your inbox. If you cannot find the email, also check your Spam folder, just in case it went there.
 
-**Step 20.** Click the hyperlink to confirm your new account. After that, you should be able to login successfully.
+**Step 20.** Click the hyperlink to confirm your new account. 
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_auto,w_600/v1605175607/fitrianingrum.me/2020-aspnet-core-sendgrid/19-check-inbox.jpg" 
 	title="Figure 11. Confirming account" 
 	alt="Confirming account"
 	width="600"
 	class="text-center" >}}
+
+After confirming your email by clicking the hyperlink, you should be able to login successfully.
+
+## Conclusion
+
+Confirming users' emails helps to verify they're not impersonating someone else. Besides, it prevents them from receiving unwanted emails from your application.
+
+You've learned how to enable account confirmation in ASP.NET Core using SendGrid, which is one of the most popular email service providers. 
+Of course, you can use other email service providers, but SendGrid is worth checking out.
 
 ## References
 
@@ -245,3 +268,6 @@ Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/aspnet/core/securit
 
 * _How to Send Email Using SendGrid with Azure_.
 Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email
+
+* _Email Marketing Software & Services_.
+Retrieved 11 10, 2020, from https://www.emailvendorselection.com/email-service-provider-list/

@@ -16,7 +16,7 @@ You might want to track your data by the week of the year.
 For example, you might want to know whether your highest sales performance happens in the 14th, 21st, or 50th week of the year. 
 In this article, you will learn how to use the `WEEKNUM` function to get the week number of the year of a date provided.
 
-## WEEKNUM
+## The WEEKNUM function
 
 This function returns a number representing the week of the year of the date provided. 
 
@@ -24,7 +24,7 @@ The syntax is as follows:
 
 `WEEKNUM(date, [type])`
 
-And you need to provide the following information:
+_And_ following is the explanation of `date` and `type` parameters used in the syntax above:
 
 {{< table "table table-sm table-bordered" >}}
 | Parameter	| Description                                     |
@@ -33,7 +33,7 @@ And you need to provide the following information:
 | `type`	| This parameter represents the day that the week starts on. ___It's optional, and by default, the value is 1. ___The value 1 indicates that the week starts on Sunday and ends on Saturday, while the value 2 indicates the week starts on Monday and ends on Sunday. |
 {{</ table >}}
 
-Sample usages:
+For examples of usage with different parameters, see the following table:
 
 {{< table "table table-sm table-bordered" >}}
 | Syntax                        | Explanation                                     |
@@ -44,12 +44,12 @@ Sample usages:
 | WEEKNUM(43821,2)              | 43821 is the number for December 22, 2019. The result will be 52 (the same as the above result). |
 {{</ table >}}
 
-To understand how to use the function in **Google Sheets**, let’s take a look at the following example. 
+To understand how to use the function in **Google Sheets**, let’s take a look at the following step-by-step example. 
 
 ## Step-by-step: using WEEKNUM in Google Sheets
 
-The spreadsheet in **Figure 1** below has a series of dates in cells **B3** through **B11**. 
-Notice that the date format is in `mm/dd/yyyy`. 
+See the spreadsheet in **Figure 1** below. It has a series of dates in cells **B3** through **B11**. 
+Also, notice that the date format is in `mm/dd/yyyy`. 
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1589005846/fitrianingrum.me/2020_googlesheet-weeknum-fig1.jpg" 
 	title="Figure 1. Sales Amount" 
@@ -58,7 +58,8 @@ Notice that the date format is in `mm/dd/yyyy`.
 	width="600">}}
 
 
-We will fill the week numbers in cells **D3** through **D11** using the `WEEKNUM` function. To do that, follow the simple step-by-step below:
+We will fill the week numbers in cells **D3** through **D11** using the `WEEKNUM` function.
+To do that, follow the simple steps below:
 
 **Step 1**. Click on **Cell D3**.
 
@@ -80,5 +81,7 @@ You will see that **D3**'s value is 3, indicating that January 15, 2020, is the 
 As a result, you got week numbers populated from **D4** through **D11**. 
 
 Notice that the dates `4/5/2020` and `4/6/2020` have the same week number. 
-It’s because we didn’t specify the `type` when entering the formula. 
-Thus, the calculation uses Sunday as the first day of the week.
+We didn't specify the `type` parameter when entering the formula. 
+Thus, by default, the calculation uses Sunday as the first day of the week.
+
+Try to change the formula to `=WEEKNUM(B3, 2)`, and you will get different results.
