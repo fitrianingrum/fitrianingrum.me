@@ -358,7 +358,7 @@ h1 > .card-header-title {
 /*Blockquote*/
 .blockquote {
     padding: 0.5rem 0.5rem 0.5rem 1.5rem !important;
-    font-size: inherit !important;
+    font-size: medium !important;
     position: relative;
 }
 

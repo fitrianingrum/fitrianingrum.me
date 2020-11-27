@@ -27,7 +27,7 @@ It was initially built as a transactional email service and then [acquired by Tw
 There are [425+ other email sending services](https://www.emailvendorselection.com/email-service-provider-list/), including [Mailgun](https://www.mailgun.com/) and [Mandrill by MailChimp](https://www.mandrill.com/), which are also popular and commonly used.
 So, if you are looking for an alternative tool, you have lots to choose from. 
 
-However, in this article, we are going to use SendGrid, because it's not only popular but also known for being reliable, well-documented, easy to set up, and _cheap_!.
+However, in this article, we are going to use SendGrid, because it's not only popular but also known for being reliable, well-documented, easy to set up, and cheap.
 
 ## Step-by-step: Email Confirmation using SendGrid
 
@@ -256,11 +256,10 @@ After confirming your email by clicking the hyperlink, you should be able to log
 
 ## Conclusion
 
-You've learned how to enable account confirmation in ASP.NET Core using SendGrid, which is one of the most popular email service providers. 
-Of course, you can use other email service providers, but SendGrid is worth checking out.
+Confirming users' emails helps verify that they're not impersonating someone else and prevent them from receiving unwanted emails from your application.
 
-By confirming users' emails, it helps to verify they're not impersonating someone else. 
-Besides, it prevents them from receiving unwanted emails from your application.
+You've learned how to enable account confirmation in ASP.NET Core using SendGrid, which is one of the most popular email service providers.
+Of course, you can use other email service providers, but SendGrid is worth checking out.
 
 ## References
 
