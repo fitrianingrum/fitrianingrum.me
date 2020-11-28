@@ -2,6 +2,7 @@
 title: "5 Free Online Tools to Create Entity-Relationship Diagrams (ERD)"
 description: "Looking for free online tools to design your relational database and collaborate with your co-workers when designing the database? Check out some of the options here. Plus, learn why it is important to model your database correctly."
 date: 2020-11-19T15:28:05+07:00
+lastmod: 2020-11-27T15:28:05+07:00
 image: ""
 imageAuthor: ""
 imageAuthorUrl: ""
@@ -44,7 +45,7 @@ In this article, I'd like to pick these 5 for you:
 
 ### 1. Draw.io
 
-I put [draw.io](https://www.draw.io/) on the first list because it's a completely free---you can access all of its functionalities for free and without limitations!
+I put [draw.io](https://www.draw.io/) on the first list because it's completely free---you can access all of its functionalities for free and without limitations!
 
 If you just need to create ER diagrams and share them with co-workers, then draw.io is probably the best option for you! 
 
@@ -57,7 +58,7 @@ This tool is very easy to use. You can create a diagram from scratch easily and 
 	class="text-center" >}}
 
 You may be wondering how draw.io earns money.
-_Well_, they offers different pricing options for various [integrations](https://www.diagrams.net/integrations.html). 
+_Well_, they offer different pricing options for various [integrations](https://www.diagrams.net/integrations.html). 
 So, for example, if you use draw.io with Atlassian Confluence and JIRA, there will be a monthly or yearly fee.
 
 ### 2. Lucidchart 
@@ -87,7 +88,7 @@ For the [Free Plan](https://lucid.app/pricing/lucidchart#/pricing), you can acce
 Unlike Lucidchart, [SqlDBM](https://sqldbm.com/) doesn't require you to create an account if you just want to play around creating a database diagram. 
 
 Before creating a diagram, you will need to choose the RDBMS that you're going to use.
-[SqlDBM](https://sqldbm.com/) supports many popular database types, such as Microsoft SQL Server, MySQL, PostgreSQL, Amazon Redshift, and Snowflake.
+SqlDBM supports many popular database types, such as Microsoft SQL Server, MySQL, PostgreSQL, Amazon Redshift, and Snowflake.
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1606464649/fitrianingrum.me/2020-online-erd-tools/sqldbm-er-diagram.jpg" 
 	title="SqlDBM - database diagram" 
@@ -97,7 +98,7 @@ Before creating a diagram, you will need to choose the RDBMS that you're going t
 
 If you'd like to save your diagram, sign up for a free account and then sign in. 
 
-[SqlDBM](https://sqldbm.com/) also allows you to generate SQL scripts that will build your diagram in your chosen RDBMS. 
+SqlDBM also allows you to generate SQL scripts that will build your diagram in your chosen RDBMS. 
 It can save you a lot of time when converting your diagram into a real database.
 
 This tool is suitable for a wide range of users, namely Developers, Project Managers, BI Consultants, Teachers, and Students.
@@ -116,7 +117,7 @@ As you type in the left-pane, the visual display on the right-pane refreshes to 
 	class="text-center" >}}
 
 This tool allows you to share your diagrams and export them in PDF, PNG, or SQL format.
-If you want to export the SQL scripts, currently, there are a few database options available to choose: SQL Server, MySQL, and PostgreSQL.
+If you want to export the SQL scripts, currently, there are a few database options available to choose from: SQL Server, MySQL, and PostgreSQL.
 
 There are two plans available: [Free and Pro](https://dbdiagram.io/pricing). _And_ for the Free Plan, you can create up to 10 diagrams. 
 If you'd like to go for Pro, the price is $9 per month.
@@ -137,15 +138,17 @@ However, this tool is a bit easier to use because the code that you need to writ
 	width="600"
 	class="text-center" >}}
 
-It also has two plans: Free (basic) and Pro. If you'd like to go for Pro, the price is $14 per month, which is higher than [dbdiagrams.io](https://dbdiagram.io/)'s.
+It also has two plans: Free (basic) and Pro. If you'd like to go for Pro, the price is $14 per month, which is higher than dbdiagrams.io's.
 
 ## Conclusion 
 
 When it comes to model your relational database, you actually don't need anything more than a pencil and some paper. 
-However, if you want to collaborate with your co-workers when creating ER diagrams, there are many online tools you can choose.
+However, if you want to collaborate with your co-workers when creating ER diagrams, there are many online tools you can choose from.
 
-One of the 5 online tools explained in this article may be the best option for you. 
+One of the 5 online tools explained in this article may be the best option for you!
+
 You'll probably like [draw.io](https://www.draw.io/) the most because it's free and easy to use.
+If you don't like creating diagrams from scratch and prefer to use templates, go for [Lucidchart](https://www.lucidchart.com/).
 _Or_, if you're a Developer, you may like [SqlDBM](https://sqldbm.com/), [dbdiagrams.io](https://dbdiagram.io/), or [Quick DBD](https://www.quickdatabasediagrams.com/).
 
-Have a quick try of each of them, and if you have comments you'd like to share, feel free to write in the comment section below 😉
+Have a quick try at each of them, and if you have comments you'd like to share, feel free to write in the comment section below. 😉
