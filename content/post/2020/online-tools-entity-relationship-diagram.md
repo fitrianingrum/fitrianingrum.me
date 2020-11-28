@@ -24,7 +24,7 @@ And too much time is spent on thinking about how to build a system as quickly as
 The problem with that mindset is that you will obviously miss common things, and late in the project, you have to go back to tweak or fix the design.
 You will often need to add several major tables, split tables apart, or even nearly starting over.
 
-It will be It will be more difficult to make changes to your systems as more users exist. 
+It will be more difficult to make changes to your systems as more users exist. 
 And in the end, doing maintenance is far more costly than initially creating the system.
 
 {{< blockquote >}}
@@ -37,19 +37,16 @@ By modeling the entities, attributes, and relationships correctly, it will be ea
 ## The 5 Online Tools to Create ER Diagrams
 
 There are standalone applications that you can use. 
-However, but they can be expensive and are often specific to a particular database.
+_But_, they can be expensive and are often tied to specific databases.
 
 There are also many free online tools out there, which run in web browsers and can be used to develop database diagrams for various RDBMSs. 
-However, in this article, I'll pick only 5, and here is the list:
+In this article, I'd like to pick these 5 for you:
 
 ### 1. Draw.io
 
-Website: [draw.io](https://www.draw.io/)
+I put [draw.io](https://www.draw.io/) on the first list because it's a completely free---you can access all of its functionalities for free and without limitations!
 
-I put this tool on the first list because it's a completely free web application. 
-You can access all of its functionalities for free and without limitations.
-
-If you just need to create ER diagrams and share them with co-workers, then [draw.io](https://www.draw.io/) is probably the best option for you! 
+If you just need to create ER diagrams and share them with co-workers, then draw.io is probably the best option for you! 
 
 This tool is very easy to use. You can create a diagram from scratch easily and quickly, then download it as PDF, PNG, JPG, or SVG, even without login or registration.
 
@@ -59,18 +56,16 @@ This tool is very easy to use. You can create a diagram from scratch easily and 
 	width="600"
 	class="text-center" >}}
 
-You may be wondering how [draw.io](https://www.draw.io/) earns money.
+You may be wondering how draw.io earns money.
 _Well_, they offers different pricing options for various [integrations](https://www.diagrams.net/integrations.html). 
 So, for example, if you use draw.io with Atlassian Confluence and JIRA, there will be a monthly or yearly fee.
 
 ### 2. Lucidchart 
 
-Website: [lucidchart.com](https://www.lucidchart.com/)
-
 To start creating a new diagram in [Lucidchart](https://www.lucidchart.com/), first, you need to sign up for a free account if you don't have any.
 After that, you can create a new diagram from a template or start from a blank.
 
-While there are no templates in [draw.io](https://www.draw.io/), [Lucidchart](https://www.lucidchart.com/) has many beautiful ones to choose from before creating an ER diagram.
+While there are no templates in draw.io, [Lucidchart](https://www.lucidchart.com/) offers many beautiful ones to choose from before creating an ER diagram.
 You can also choose between Crow's Foot notation or UML notation when creating a diagram from templates.
 
 See the following example of an ER that uses Crow's Foot notation:
@@ -81,15 +76,13 @@ See the following example of an ER that uses Crow's Foot notation:
 	width="540"
 	class="text-center" >}}
 
-In [Lucidchart](https://www.lucidchart.com/), sharing a diagram is very similar to share a document in Google Drive.
+Sharing a diagram in [Lucidchart](https://www.lucidchart.com/) is very similar to share a document in Google Drive.
 You can share it publicly by using a shareable link or to specific people by entering their email address. 
 You can also set its edit, comment, and share permission easily.
 
 For the [Free Plan](https://lucid.app/pricing/lucidchart#/pricing), you can access 100 free templates and edit up to 3 documents, with each document can contain up to 60 objects.
 
 ### 3. SqlDBM
-
-Website: [sqldbm.com](https://sqldbm.com/)
 
 Unlike Lucidchart, [SqlDBM](https://sqldbm.com/) doesn't require you to create an account if you just want to play around creating a database diagram. 
 
@@ -111,9 +104,7 @@ This tool is suitable for a wide range of users, namely Developers, Project Mana
 
 ### 4. dbdiagrams.io
 
-Website: [dbdiagrams.io](https://dbdiagram.io/)
-
-This tool is mainly designed for Developers and Data Analysts.
+The [dbdiagrams.io](https://dbdiagram.io/) is mainly designed for Developers and Data Analysts.
 
 To create a diagram, you need to write codes similar to SQL commands for creating tables. 
 As you type in the left-pane, the visual display on the right-pane refreshes to show you what the diagram looks like based on the table names, columns, and relationships you defined.
@@ -132,9 +123,7 @@ If you'd like to go for Pro, the price is $9 per month.
 
 ### 5. Quick DBD
 
-Website: [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
-
-[Quick DBD](https://www.quickdatabasediagrams.com/) has similar features with the [dbdiagrams.io](https://dbdiagram.io/), in ways such as:
+[Quick DBD](https://www.quickdatabasediagrams.com/) has similar features with the dbdiagrams.io, in ways such as:
 - You need to write codes to build the diagram.
 - It does not require you to sign up first before creating a diagram.
 - It allows you to export diagrams 
