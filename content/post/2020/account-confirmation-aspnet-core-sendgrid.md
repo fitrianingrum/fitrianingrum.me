@@ -8,7 +8,7 @@ imageAuthor: ""
 imageAuthorUrl: ""
 imageSource: ""
 imageSourceUrl: ""
-tags: ["aspnet core","sendgrid"]
+tags: ["aspnet core","sendgrid","csharp"]
 categories: ["web development"]
 keywords: ["aspnet core sendgrid", "asp net core sendgrid", "asp net core sendgrid email confirmation", "asp net core sendgrid account confirmation","aspnet email confirmation sendgrid"]
 ---
@@ -27,7 +27,7 @@ It was initially built as a transactional email service and then [acquired by Tw
 There are [425+ other email sending services](https://www.emailvendorselection.com/email-service-provider-list/), including [Mailgun](https://www.mailgun.com/) and [Mandrill by MailChimp](https://www.mandrill.com/), which are also popular and commonly used.
 So, if you are looking for an alternative tool, you have lots to choose from. 
 
-However, in this article, we are going to use SendGrid, because it's not only popular but also known for being reliable, well-documented, easy to set up, and cheap.
+However, in this article, we are going to use SendGrid, because it's not only popular but also known for being reliable, easy to set up, and well-documented.
 
 ## Step-by-step: Email Confirmation using SendGrid
 
@@ -242,7 +242,7 @@ After registering successfully, you will be asked to check your email to confirm
 	width="600"
 	class="text-center" >}}
 
-**Step 21.** Check your inbox. If you cannot find the email, also check your Spam folder, just in case it went there.
+**Step 21.** Check your inbox. If you can't find the email, check your Spam folder, just in case it went there.
 
 **Step 20.** Click the hyperlink to confirm your new account. 
 

@@ -77,7 +77,7 @@ See the following example of an ER that uses Crow's Foot notation:
 	width="540"
 	class="text-center" >}}
 
-Sharing a diagram in [Lucidchart](https://www.lucidchart.com/) is very similar to share a document in Google Drive.
+Sharing a diagram in [Lucidchart](https://www.lucidchart.com/) is pretty similar to sharing a document in Google Drive.
 You can share it publicly by using a shareable link or to specific people by entering their email address. 
 You can also set its edit, comment, and share permission easily.
 
