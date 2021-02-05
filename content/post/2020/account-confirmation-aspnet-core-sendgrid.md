@@ -16,7 +16,7 @@ keywords: ["aspnet core sendgrid", "asp net core sendgrid", "asp net core sendgr
 It's a best practice to confirm the email of a newly registered user to verify that they're not impersonating someone else. 
 You generally want to prevent new users from accessing or posting any data to your web application before being confirmed by email, SMS text message, or another mechanism.
 
-This article provides the step-by-step to enable email confirmation in ASP.NET Core Web Application using [SendGrid](https://sendgrid.com/). 
+This article provides the step-by-step to enable email confirmation in ASP.NET Core Web Application using SendGrid. 
 
 ## What is SendGrid?
 
@@ -260,14 +260,3 @@ Confirming users' emails helps verify that they're not impersonating someone els
 
 You've learned how to enable account confirmation in ASP.NET Core using SendGrid, which is one of the most popular email service providers.
 Of course, you can use other email service providers, but SendGrid is worth checking out.
-
-## References
-
-* _Account confirmation and password recovery in ASP.NET Core_.
-Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/aspnet/core/security/authentication/accconfirm?view=aspnetcore-3.1&tabs=visual-studio
-
-* _How to Send Email Using SendGrid with Azure_.
-Retrieved 11 10, 2020, from https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email
-
-* _Email Marketing Software & Services_.
-Retrieved 11 10, 2020, from https://www.emailvendorselection.com/email-service-provider-list/
