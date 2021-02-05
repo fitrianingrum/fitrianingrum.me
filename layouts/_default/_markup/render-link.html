@@ -1,5 +1,5 @@
 {{ if or (in .Destination "localhost") (in .Destination "fitrianingrum.me")}}
-	<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+	<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
 {{ else }}
-	<a href="{{ .Destination | safeURL }}"{{ with .Title}} rel="noopener noreferrer nofollow" title="{{ . }}"{{ end }} {{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener nofollow"{{ end }}>{{ .Text | safeHTML }}</a>
+	<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noreferrer noopener nofollow"{{ end }}>{{ .Text | safeHTML }}</a>
 {{ end }}
