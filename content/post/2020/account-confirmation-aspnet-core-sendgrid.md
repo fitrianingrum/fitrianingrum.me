@@ -150,7 +150,7 @@ If you have an Azure account, you can [sign up for a new SendGrid account from t
 
 **Step 13.** Sign in to your SendGrid account and [create a new API key](https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key). 
 
-**Step 14.** Create a new folder named **Services**. 
+**Step 14.** Back to Visual Studio, create a new folder named **Services**. 
 
 **Step 15.** Under the **Services** folder, create a new class and name it `EmailSender`.
 

@@ -394,7 +394,25 @@ th[align=center] {
     text-align: center;
 }
 
+.table-center {
+    margin: 0 auto;
+}
+
+.table {
+    margin-bottom: 20px;
+}
+    .table.w-auto th, .table.w-auto td {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
 /*Question*/
 .question, .answer {
     background: #f1f1f1;
+}
+
+/*Code*/
+.code, .table-code td {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.825rem;
 }
