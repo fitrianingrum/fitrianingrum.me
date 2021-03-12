@@ -8,7 +8,7 @@ categories: ["data analysis"]
 keywords: ["cube","rollup","sql server cube","sql server rollup","how to use cube rollup", "cube vs rollup"]
 ---
 
-When aggregating and summarizing data, we can use `CUBE` and `ROLLUP` to display total summaries.
+When aggregating and summarizing data, you can use `CUBE` and `ROLLUP` to display total summaries.
 While CUBE adds summarizing total values to a result set based on columns in the `GROUP BY` clause, 
 `ROLLUP` adds hierarchical data summaries based on the ordering of columns.
 In this article, I'll demonstrate the ways of summarizing data using these operators.

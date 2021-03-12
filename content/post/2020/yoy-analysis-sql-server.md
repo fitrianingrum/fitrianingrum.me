@@ -17,18 +17,20 @@ Different from monthly and quarterly analysis, the YoY analysis is not burdened 
 Thus, it offers a true robust comparison for understanding the performance throughout the year. 
 
 This article shows an example of a YoY analysis using T-SQL. 
-For the demonstration, we will use the SQL Server AdventureWorks2017 sample database.
+For the database, I use the SQL Server AdventureWorks2017 sample database, which can be downloaded from this [link](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms).
 
 ## Example
 
-Suppose we want to compare monthly sales in 2013 relative to 2012.
-To do that, first, we will create a Common Table Expression (CTE) to define the monthly sales in 2013. 
-Then, we will join the results with the previous year's sales and calculate the percent growth.
+Suppose you want to compare monthly sales in 2013 relative to 2012.
+To do that, first, you can create a Common Table Expression (CTE) to define the monthly sales in 2013. 
+Then, you can join the results with the previous year's sales and calculate the percent growth.
 
-### Step 1. Finding monthly sales in 2013 using CTE
+Follow the simple step-be-step below:
 
-The following MonthlySalesCTE defines monthly sales for 2013.
-Pay attention to lines 2-7.
+### Step 1. Find the monthly sales in 2013 using CTE
+
+The following MonthlySalesCTE defines the monthly sales for 2013.
+Pay more attention to lines 2-7.
 
 {{< highlight sql "linenos=table,hl_lines=2-7">}}
 WITH MonthlySalesCTE(CteYear, CteMonth, CteSales) AS (
@@ -69,9 +71,9 @@ Also, notice that you can actually change the year `2013` with any year you'd li
 
 {{< /table >}}
 
-### Step 2. Joining with the previous year's sales and calculate the percent growth
+### Step 2. Join with the previous year's sales and calculate the percent growth
 
-Pay attention to lines 12-18, where we add a JOIN to the previous year's sales and display the `PreviousSales` and `PctGrowth` columns.
+See the following code that adds a JOIN to the previous year's sales and displays the `PreviousSales` and `PctGrowth` columns. Pay more attention to lines 12-18.
 
 {{< highlight sql "linenos=table,hl_lines=12-18">}}
 WITH MonthlySalesCTE(CteYear, CteMonth, CteSales) AS (
@@ -113,4 +115,4 @@ Result:
 | 2013			| 2				| 2600218.8667	| 1649051.9001  | 0.37		|
 | 2013			| 1				| 2340061.5521	| 4458337.4444  | -0.91		|
 
-We can see that the sales performance in January 2013 was bad compared to the previous year's, while the rest were considerably good.
+From the above result, you can see that the sales performance in January 2013 was bad compared to the previous year's, while the rest were considerably good.

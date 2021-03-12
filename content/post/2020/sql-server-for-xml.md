@@ -12,11 +12,11 @@ categories: ["data analysis"]
 keywords: ["sql server xml", "sql server for xml", "sql server query xml", "sql server return xml", "sql export to xml", "sql query output to xml file", "xml raw", "for xml raw", "for xml auto", "for xml path", "sql server for xml auto", "sql server xml output"]
 ---
 
-SQL Server allows us to query the data (which is stored in the table) in XML format by using `FOR XML` clause. 
-This clause has several modes: `AUTO`, `RAW`, and `PATH` that we can choose based on our needs. 
+SQL Server allows you to query the data (which is stored in the table) in XML format by using `FOR XML` clause. 
+This clause has several modes: `AUTO`, `RAW`, and `PATH` that you can choose based on our needs. 
 
 There is also the `EXPLICIT` mode, which is the original method for defining the structure of the XML result. 
-However, this method is deprecated and should not be used for new development. We should use the `PATH` mode instead of `EXPLICIT`.
+However, this method is deprecated and should not be used for new development. You should use the `PATH` mode instead of `EXPLICIT`.
 
 While `FOR XML RAW` and `FOR XML AUTO` are useful for generating XML quickly, 
 `FOR XML PATH` provides much greater control and flexibility over the end result.
@@ -48,7 +48,7 @@ Result:
 
 ### --- RAW mode with a custom tag name
 
-However, we can override the default tag name for the element. 
+However, you can override the default tag name for the element. 
 The following example changes the default tag name from `row` to `SalesOrder`.
 
 ```sql
@@ -92,7 +92,7 @@ Result:
 
 ### --- RAW mode with changing attributes to elements
 
-We can also change the attributes to elements by adding `ELEMENTS`
+You can also change the attributes to elements by adding `ELEMENTS`
 
 ```sql
 SELECT	soh.SalesOrderID
@@ -128,7 +128,7 @@ Result:
 ## FOR XML AUTO
 
 This mode is similar to the `RAW` mode, but the tag name is the **table name** by default. 
-It's particularly useful when we need to map the XML result back to the original columns in the source table.
+It's particularly useful when you need to map the XML result back to the original columns in the source table.
 
 ### --- AUTO mode basic example
 
@@ -152,7 +152,7 @@ Result:
 
 ### --- AUTO mode with a custom root element
 
-If we want to give a root element named `SalesOrder`:
+If you want to give a root element named `SalesOrder`:
 
 ```sql
 SELECT	soh.SalesOrderID
@@ -174,7 +174,7 @@ Result:
 
 ## FOR XML PATH
 
-We use this mode when we know the structure of the XML result in advance. It is a safer option than the `RAW` or `AUTO` modes in production code.
+You can use this mode when you know the structure of the XML result in advance. It is a safer option than the `RAW` or `AUTO` modes in production code.
 Rows and columns are formatted as elements by default. 
 
 ### --- PATH mode basic example
@@ -210,7 +210,7 @@ Result:
 
 ### --- PATH mode with an element name
 
-We can also override the default element `row`. 
+You can also override the default element `row`. 
 The following example changes the default element `row` to `SalesOrder`.
 
 ```sql

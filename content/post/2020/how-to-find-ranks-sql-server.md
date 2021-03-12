@@ -12,13 +12,12 @@ categories: ["data analysis"]
 keywords: ["sql rank","sql server rank","ranking functions in sql server", "tsql ranking","row_number vs rank", "rank and dense_rank in sql"]
 ---
 
-Often, we want to know the ranking or position of a particular row compared to other rows based on a certain ordering sequence.
+Often, you want to know the ranking or position of a particular row compared to other rows based on a certain ordering sequence.
 In SQL Server, there are four [ranking functions](https://docs.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql?view=sql-server-ver15) 
 for assigning ranks. Those are `ROW_NUMBER`, `RANK`, `DENSE_RANK`, and `NTILE`. 
-This article covers how to use TSQL ranking functions and their differences.
+This article covers how to use those TSQL ranking functions and their differences.
 
-Ranking functions are commonly used to identify the top X of something. 
-In the following table, we'll see a summary of SQL Server ranking functions.
+Ranking functions are commonly used to identify the top X of something. See the following table that summarizes ranking functions in SQL Server.
 
 {{< table "table table-sm table-bordered" >}}
 | Function name    | Description                                                 |
@@ -50,16 +49,9 @@ The syntax uses the following arguments:
 
 ## Examples
 
-For the examples, we will create a table named **Book**, as shown in **Figure 1** below. 
-Then, we'll rank the books using each of the ranking function and compare the results.
+Suppose you have books with info such as book title, publication year, and price. And you want to store it in a database table: **Book**. 
 
-{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587873520/fitrianingrum.me/2020-book-table.jpg" 
-	title="Figure 1. The Book table" 
-	alt="The Book Table"
-	class="text-center"
-	width="340">}}
-
-Copy-paste and execute the following SQL code to create the table.
+You can copy-paste and execute the following SQL code to create the table:
 
 {{< highlight sql "linenos=table">}}
 CREATE TABLE Book (
@@ -83,10 +75,19 @@ INSERT INTO Book VALUES ('Book J', 2020, 6.00)
 SELECT * FROM Book
 {{< /highlight >}}
 
-### Example 1. Without using partition
+And here is the result:
 
-In this example, we'll implement all the four functions to rank books based on their prices. 
-Notice that we don't define any partition in the code below.
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/v1587873520/fitrianingrum.me/2020-book-table.jpg" 
+	title="Figure 1. The Book table" 
+	alt="The Book Table"
+	class="text-center"
+	width="340">}}
+
+Now, let's see some examples of how to rank your books using all the four ranking functions. We'll also compare the result returned by each function.
+
+### Example 1. Ranking functions without using partition
+
+See the following example that implements all the four functions to rank books based on their prices without defining any partition:
 
 {{< highlight sql "linenos=table">}}
 SELECT BookTitle
@@ -113,7 +114,7 @@ Next to it, the **RowNumber** column shows an incrementing number for each row b
 Also, notice that the values in this column are unique (there are no duplicate values).
 
 For the **Rank** column, see that there are duplicates in the ranking numbers because the `RANK` function assigns the same ranking numbers for prices that have the same values.
-Also, there is a jump in the numbers on a change of value. For example, we see that the rank numbers are 1, 1, then it jumps to 3 in the column.
+Also, there is a jump in the numbers on a change of value. You can see that the rank numbers are 1, 1, then it jumps to 3 in the column.
 
 The **DenseRank** column also has the same ranking numbers for the same price values. 
 See that the rank numbers are 1, 1, and then 2 in this column.
@@ -122,9 +123,9 @@ Different from the `RANK` function, `DENSE_RANK` doesn't return gaps. For dense 
 For the **Ntile** column, the results were divided into two groups. 
 Each group has five rows as the total number of rows (10) is divisible by the total number of groups (2). 
 
-### Example 2. Using partition
+### Example 2. Ranking functions using partition
 
-In this example, we will divide the results by the `YearPublished` by adding an optional `PARTITION BY YearPublished` in the `OVER` clause.
+The following example divides the results by the `YearPublished` by adding an optional `PARTITION BY YearPublished` in the `OVER` clause.
 
 {{< highlight sql "linenos=table">}}
 SELECT BookTitle
