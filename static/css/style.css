@@ -328,7 +328,7 @@ article {
 h1 > .card-header-title {
     letter-spacing: 0.0875rem;
     font-weight: normal;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 /*Header Image*/
@@ -415,4 +415,13 @@ th[align=center] {
 .code, .table-code td {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.825rem;
+}
+
+.all-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

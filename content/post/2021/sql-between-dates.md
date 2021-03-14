@@ -1,5 +1,5 @@
 ﻿---
-title: "How to Use SQL BETWEEN for Date Range Searches"
+title: "SQL BETWEEN for Date Range Searches — Are you sure you use it correctly?"
 description: "Learn how to use SQL BETWEEN operator correctly to filter dates, as you might be wrong all this time."
 hideDescription: "true"
 date: 2021-03-12T14:18:05+07:00

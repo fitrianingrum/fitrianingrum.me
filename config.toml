@@ -23,9 +23,9 @@ canonifyURLs = true
 [params]
     Author = "Fitrianingrum"
 	Description = "blog and personal website"
-    SiteTagline = "Coding, blogging"
+    SiteTagline = "Fitrianingrum"
     NavLinks = [
-		{ url = "/post", title = "Blogs" },
+		{ url = "/post", title = "Posts" },
         { url = "/contact", title = "Contact" }
     ]
     
