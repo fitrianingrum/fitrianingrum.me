@@ -115,4 +115,4 @@ Result:
 | 2013			| 2				| 2600218.8667	| 1649051.9001  | 0.37		|
 | 2013			| 1				| 2340061.5521	| 4458337.4444  | -0.91		|
 
-From the above result, you can see that the sales performance in January 2013 was bad compared to the previous year's, while the rest were considerably good.
+From the above result, you can see that the sales performance in January 2013 was bad compared to the previous year's (negative **PctGrowth** value), while the rest were considerably good.
