@@ -10,6 +10,7 @@ imageSource: ""
 imageSourceUrl: ""
 categories: ["data analysis"]
 keywords: ["google sheets weeknum", "find week number in google sheets", "week number in google sheets"]
+featured: true
 ---
 
 You might want to track your data by the week of the year. 

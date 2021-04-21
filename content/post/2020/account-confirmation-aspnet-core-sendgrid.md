@@ -3,14 +3,15 @@ title: "Email Confirmation in ASP.NET Core using SendGrid"
 description: "Learn the step-by-step to enable account confirmation in ASP.NET Core using SendGrid to prevent a newly registered user from logging in until their email has been confirmed."
 date: 2020-11-10T08:44:09+07:00
 lastmod: 2020-11-11T11:56:08+07:00
-image: ""
-imageAuthor: ""
-imageAuthorUrl: ""
-imageSource: ""
-imageSourceUrl: ""
+image: "https://res.cloudinary.com/phi21st/image/upload/v1619046789/fitrianingrum.me/user-authentication-freepik-20943394.jpg"
+imageAuthor: "vectorjuice"
+imageAuthorUrl: "https://www.freepik.com/vectorjuice"
+imageSource: "www.freepik.com"
+imageSourceUrl: "https://www.freepik.com/free-vector/user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-people-entering-login-password-safety-measures_11667025.htm"
 tags: ["aspnet core","sendgrid","csharp"]
 categories: ["web development"]
 keywords: ["aspnet core sendgrid", "asp net core sendgrid", "asp net core sendgrid email confirmation", "asp net core sendgrid account confirmation","aspnet email confirmation sendgrid"]
+featured: true
 ---
 
 It's a best practice to confirm the email of a newly registered user to verify that they're not impersonating someone else. 

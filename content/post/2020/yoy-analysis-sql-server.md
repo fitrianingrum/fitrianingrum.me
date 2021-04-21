@@ -10,6 +10,7 @@ imageSource: "Pexels"
 imageSourceUrl: "https://www.pexels.com/photo/185576"
 categories: ["data analysis"]
 keywords: ["yoy analysis sql", "year over year sql", "year over year analysis sql", "yoy analysis sql server"]
+featured: true
 ---
 
 A year-over-year (YoY) analysis compares data for the current year relative to last year. 
