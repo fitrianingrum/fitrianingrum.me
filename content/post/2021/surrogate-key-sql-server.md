@@ -7,8 +7,8 @@ imageAuthor: ""
 imageAuthorUrl: ""
 imageSource: ""
 imageSourceUrl: ""
-tags: ["web development"]
-categories: ["technology"]
+tags: ["sql server", "sql", "database design", "tsql"]
+categories: ["database design"]
 keywords: ["surrogate key sql","surrogate keys sql","sql surrogate key","sql surrogate keys","natural key sql","sql server surrogate key", "surrogate keys in sql server","surrogate key in sql server"]
 ---
 
@@ -134,13 +134,9 @@ SELECT * FROM WellA;
 
 Result:
 
-{{< table "table table-sm table-code w-auto" >}}
-| WellId  | Longitude     | Longitude     | Depth     | 
-|---------|--------------:|--------------:|----------:|
-| 1       | 220           | 140           | 5.6       | 
-| 2       | 220           | 160           | 5.6       | 
-{{</ table >}}
-
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_60,w_600/v1619147986/fitrianingrum.me/2021-surrogate-key-sql-server/Figure_1._How_to_create_a_surrogate_key_in_SQL_Server_using_an_IDENTITY_column.png" 
+	alt="How to create a surrogate key in SQL Server using an IDENTITY column"
+	width="600">}}
 
 ### Using a GUID column
 
@@ -149,7 +145,7 @@ Based on how GUIDs are generated, there's nearly impossible that there will ever
 These values are guaranteed to be unique across databases and servers.
 
 In SQL Server databases, GUID values are stored in the UNIQUEIDENTIFIER data type. 
-You can generate a GUID value in SQL Server by using the NEWID() function.  
+You can generate a GUID value in SQL Server by using the `NEWID()` function.  
 
 ```sql
 -- Creates a table named WellB. 
@@ -173,9 +169,6 @@ SELECT * FROM WellB;
 
 Result:
 
-{{< table "table table-sm table-code w-auto" >}}
-| WellId                                     | Longitude     | Longitude     | Depth     | 
-|--------------------------------------------|--------------:|--------------:|----------:|
-| 9C4923C4-7DDE-4024-9BAB-4E2FD2E252C1       | 220           | 170           | 7.5       | 
-| 0D5036DA-A756-4499-BF48-E5E4ABBB548A       | 340           | 170           | 8.2       | 
-{{</ table >}}
+{{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_60,w_600/v1619147726/fitrianingrum.me/2021-surrogate-key-sql-server/Figure_2._How_to_create_a_surrogate_key_in_SQL_Server_using_a_GUID_column.png" 
+	alt="How to create a surrogate key in SQL Server using a GUID column"
+	width="600">}}

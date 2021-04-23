@@ -1,6 +1,11 @@
 {{ define "main" }}
 <main class="content m-4 p-2">
     <div class="container">
+        <div class="row justify-content-end g-4 pb-3">
+            <div class="col text-right">
+                <a href="/post">View all posts &rarr;</a>
+            </div>
+        </div>
         <div class="home-featured">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 {{ range first 3 (where (where .Site.RegularPages "Type" "in" "post") ".Params.featured" "=" true) }}
@@ -22,11 +27,6 @@
                     </article>
                 </div>
                 {{ end }}
-            </div>
-            <div class="row justify-content-end g-4">
-                <div class="col text-right">
-                    <a href="/post">All posts &rarr;</a>
-                </div>
             </div>
         </div>
     </div>

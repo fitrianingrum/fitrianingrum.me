@@ -2,12 +2,12 @@
 title: "Year-over-Year (YoY) Analysis in SQL Server"
 description: "Learn how to do a Year-over-Year (YoY) analysis to identify the actual performance indicators without being burdened by seasonality between months or quarters."
 date: 2020-05-25T10:36:07+07:00
-tags: ["sql", "tsql", "sql server"]
 image: "https://res.cloudinary.com/phi21st/image/upload/v1588132801/fitrianingrum.me/analytics.png"
 imageAuthor: "Timur Saglambilek"
 imageAuthorUrl: "https://www.pexels.com/@marketingtuig"
 imageSource: "Pexels"
 imageSourceUrl: "https://www.pexels.com/photo/185576"
+tags: ["sql", "tsql", "sql server"]
 categories: ["data analysis"]
 keywords: ["yoy analysis sql", "year over year sql", "year over year analysis sql", "yoy analysis sql server"]
 featured: true
@@ -51,7 +51,7 @@ ORDER BY cte.CteYear DESC, cte.CteMonth DESC
 
 Result:
 
-{{< table "table table-sm w-auto" >}}
+{{< table "table table-sm table-code w-auto" >}}
 
 | CalendarYear	| CalendarMonth	| CurrentSales  | 
 |--------------:|--------------:|--------------:|
@@ -99,7 +99,7 @@ ORDER BY cte.CteMonth DESC
 
 Result:
 
-{{< table "table table-sm w-auto" >}}
+{{< table "table table-sm table-code w-auto" >}}
 
 | CalendarYear	| CalendarMonth	| CurrentSales	| PreviousSales	| PctGrowth |
 |--------------:|--------------:|--------------:|--------------:|----------:|

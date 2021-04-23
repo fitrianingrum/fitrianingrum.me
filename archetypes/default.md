@@ -7,8 +7,8 @@ imageAuthor: ""
 imageAuthorUrl: ""
 imageSource: ""
 imageSourceUrl: ""
-tags: ["web development"]
-categories: ["technology"]
+tags: ["TODO"]
+categories: ["TODO"]
 keywords: [""]
 draft: true
 ---

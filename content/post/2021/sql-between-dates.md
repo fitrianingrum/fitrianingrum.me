@@ -8,7 +8,7 @@ imageAuthor: ""
 imageAuthorUrl: ""
 imageSource: ""
 imageSourceUrl: ""
-tags: ["sql","sql server"]
+tags: ["sql","sql server","tsql"]
 categories: ["data analysis"]
 keywords: ["sql between","between sql","between in sql","sql between two dates","date between","sql between inclusive","sql between dates","sql date between","sql date range"]
 ---

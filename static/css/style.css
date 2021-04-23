@@ -385,6 +385,9 @@ code {
 /*table*/
 th {
     white-space: nowrap;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.825rem;
 }
 
 th[align=right] {
