@@ -67,7 +67,7 @@ You'll need this library to create a connection to your SQL Server database.
 
 ### Step 4: Write VBA code
 
-Double click on **ThisWorkbook** from **Project Explorer** and create `Sub Workbook_Open()`. 
+In **Project Explorer**, double-click on **ThisWorkbook** and create `Sub Workbook_Open()`. 
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_60,w_600/v1619675459/fitrianingrum.me/2021-subquery-sql-select-statement/Excel_VBA_Editor_-_Create_a_new_Sub_in_ThisWorkbook.png" 
 	alt="Excel VBA Editor - Create a new Sub in ThisWorkbook"
@@ -127,7 +127,7 @@ Save, close, and re-open the Excel document. The data will be populated in the w
 
 ## Code explanation
 
-There are four essential parts in the VBA code above. 
+There are *four essential parts* in the VBA code above. 
 
 First, you need to connect to SQL Server. And to do that, you need a connection string to the database. 
 
