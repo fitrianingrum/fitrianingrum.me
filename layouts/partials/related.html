@@ -1,4 +1,4 @@
-{{ $related := .Site.RegularPages.Related . }}
+{{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <section id="related-posts">
     <h3 class="tag-title">YOU MIGHT ALSO LIKE</h3>
