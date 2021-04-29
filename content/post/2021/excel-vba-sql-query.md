@@ -67,7 +67,7 @@ You'll need this library to create a connection to your SQL Server database.
 
 ### Step 4: Write VBA code
 
-In **Project Explorer**, double-click on **ThisWorkbook** and create `Sub Workbook_Open()`. 
+In **Project Explorer**, double-click on **ThisWorkbook** and create a Sub: `Workbook_Open()`. 
 
 {{< figure src="https://res.cloudinary.com/phi21st/image/upload/c_scale,q_60,w_600/v1619675459/fitrianingrum.me/2021-subquery-sql-select-statement/Excel_VBA_Editor_-_Create_a_new_Sub_in_ThisWorkbook.png" 
 	alt="Excel VBA Editor - Create a new Sub in ThisWorkbook"
@@ -137,7 +137,7 @@ Dim adoDbRs As New ADODB.Recordset
 Dim selectCmd As New ADODB.Command
     
 ' Open connection to the SQL Server database
-adoDbConn.Open "Provider=SQLOLEDB;Data Source=.\MSSQL2019;Initial Catalog=ExcelVbaSql;User Id=sa; Password=Pa$$w0rd;"
+adoDbConn.Open "Provider=SQLOLEDB;Data Source=.\MSSQL2019;Initial Catalog=ExcelVbaSql;User Id=<userid>; Password=<password>;"
 ```
 
 Second, you need to execute the SELECT statement to get data from the database.

@@ -7,7 +7,7 @@ imageAuthor: "Tumisu"
 imageAuthorUrl: "https://pixabay.com/users/tumisu-148124/"
 imageSource: "pixabay"
 imageSourceUrl: "https://www.pixabay.com/photos/2993000"
-tags: ["contact form", "formspree"]
+tags: ["formspree"]
 keywords: ["contact form using formspree", "formspree contact form"]
 categories: ["web development"]
 ---
