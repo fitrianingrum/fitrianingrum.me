@@ -7,8 +7,8 @@ imageAuthor: ""
 imageAuthorUrl: ""
 imageSource: ""
 imageSourceUrl: ""
-tags: ["product management"]
-categories: ["product management"]
+tags: ["product management", "career"]
+categories: ["career"]
 keywords: [""]
 ---
 
