@@ -16,7 +16,7 @@ In Excel, there are various ways to display data from external sources, such as 
 One of them is by using VBA. This approach is not straightforward and requires some programming knowledge. 
 But there may be situations when you prefer using this method.
 
-Let me give you an example:
+Here's an example:
 
 Assume you need to create and share an Excel file that generates an interactive report from data stored in SQL Server. 
 In this case, you will likely choose to use VBA because everyone who receives the file can run the report without needing to set up or install anything else. 
