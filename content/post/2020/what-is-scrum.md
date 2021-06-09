@@ -7,8 +7,8 @@ imageAuthor: "Goumbik--3752482"
 imageAuthorUrl: "https://pixabay.com/users/Goumbik-3752482"
 imageSource: "pixabay"
 imageSourceUrl: "https://www.pixabay.com/photos/2048166"
-tags: ["scrum","agile"]
-categories: ["project management"]
+tags: ["scrum","agile","project management","product management"]
+categories: ["project management", "product management"]
 keywords: ["scrum vs agile", "scrum roles", "scrum events", "scrum artifacts", "scrum overview"]
 ---
 
